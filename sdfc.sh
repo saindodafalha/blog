@@ -15,11 +15,11 @@ CSSDIR="$ROOTDIR/css"; # css     (*.css)
 RSSDIR="$ROOTDIR/rss"; # rss     (*.xml)
 VARDIR="$ROOTDIR/var"; # var     (*.txt)
 RAWDIR="$ROOTDIR/raw"; # raw     (*.txt)
-WWWDIR="$ROOTDIR/www"; # www     directories
+WWWDIR="$ROOTDIR/docs"; # www     directories
 
 # estrutura do diretório do site
-WEBSITE_URL='saindodafalha';
-WEBSITE_ROOT="$WWWDIR/$WEBSITE_URL";
+WEBSITE_URL='';
+WEBSITE_ROOT="$WWWDIR";
 WEBSITE_HOME="$WEBSITE_ROOT";
 WEBSITE_FILES="$WEBSITE_HOME/files";
 WEBSITE_PAGES="$WEBSITE_HOME/r";
