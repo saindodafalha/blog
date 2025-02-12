@@ -1,0 +1,199 @@
+Vou voltar a treinar e medi tudo para comparar no futuro.
+;br
+
+;^table
+;^tr
+;th Membro 
+;th (cm)
+;$tr
+
+;^tr
+;tdl Pescoço 
+;tdc 34.5
+;$tr
+
+;^tr
+;tdl Punho Esquerdo
+;tdc 15.0
+;$tr
+
+;^tr
+;tdl Punho Direito
+;tdc 15.0
+;$tr
+
+;^tr
+;tdl Antebraço Esquerdo
+;tdc 24.0
+;$tr
+
+;^tr
+;tdl Antebraço Direito
+;tdc 24.5
+;$tr
+
+;^tr
+;tdl Bíceps Esquerdo
+;tdc 30.5
+;$tr
+
+;^tr
+;tdl Bíceps Direito
+;tdc 30.5
+;$tr
+
+;^tr
+;tdl Peitoral (linha dos mamilos)
+;tdc 83.5
+;$tr
+
+;^tr
+;tdl Peitoral (linha das axilas)
+;tdc 89.0
+;$tr
+
+;^tr
+;tdl Ombros 
+;tdc 98.0
+;$tr
+
+;^tr
+;tdl Barriga/Abdomem
+;tdc 73.0
+;$tr
+
+;^tr
+;tdl Quadril/Bunda
+;tdc 86.6
+;$tr
+
+;^tr
+;tdl Coxa Esquerda (30cm high)
+;tdc 44.5
+;$tr
+
+;^tr
+;tdl Coxa Direita (30cm high)
+;tdc 47.5
+;$tr
+
+;^tr
+;tdl Coxa Esquerda (25cm high)
+;tdc 40.0
+;$tr
+
+;^tr
+;tdl Coxa Direita (25cm high)
+;tdc 42.5
+;$tr
+
+;^tr
+;tdl Coxa Esquerda (20cm high)
+;tdc 37.0
+;$tr
+
+;^tr
+;tdl Coxa Direira (20cm high)
+;tdc 39.0
+;$tr
+
+;^tr
+;tdl Panturrilha Esquerda
+;tdc 31.0
+;$tr
+
+;^tr
+;tdl Panturrilha Direita
+;tdc 32.0
+;$tr
+
+;^tr
+;tdl Tornozelo Esquerdo 
+;tdc 20.5
+;$tr
+
+;^tr
+;tdl Tornozelo Direito
+;tdc 20.0
+;$tr
+;$table
+
+;br
+
+;^table
+;^tr
+;th Outros 
+;$tr
+
+;^tr
+;tdl Peso 
+;tdc 59.8kg
+;$tr
+
+;^tr
+;tdl Altura
+;tdc 1,79m
+;$tr
+
+;^tr
+;tdl IMC
+;tdc 18.7 
+;$tr
+
+;^tr
+;tdl Body Fat Estimada (U.S. Navy Method)*
+;tdc 9.1%
+;$tr
+
+;^tr
+;tdl Body Fat Estimada (BMI method)*
+;tdc 11.9%
+;$tr
+
+;^tr
+;tdl Body Fat Estimada (Olhômetro)
+;tdc 15~20%
+;$tr
+;$table
+
+;;<span class="mono-small">*= Calculei o body fat usando ;url "https://www.calculator.net/body-fat-calculator.html" "esta calculadora".</span>
+;br
+;br
+;h2 Metodologia
+Medi sozinho com uma fita métrica. Não sei a maneira correta de medir, apenas tentei fazer da forma mais precisa que pude.
+Vou explicar em detalhes como fiz cada medida para que eu possa repetir da mesma forma no futuro.
+;br
+;h4 Geral
+Em todas as medidas eu segurei a ponta da fita com a mão esquerda, e o resto, enrolado, com a mão direita.
+Não apertei muito a fita, nem deixei fogado. Apenas deixei justo ao corpo, sem fazer tanta pressão. 
+Todas as medidas foram tiradas com os músculos relaxados, menos os biceps. Estes foram medidos contraídos.
+;br
+;h4 Superior
+Medi o pescoço passando a fita por trás onde ele junta com o torço, e por baixo do pomo de adão.
+Ao medir o punho, passei a fita antes do osso proeminente. Não passei por cima do osso, mas antes, do lado do braço, não do lado da mão.
+Para medir o antebraço, tracei uma marcação a 7cm da dobra do cotovelo, com o braço esticado. Passei a fita do lado de fora da marcação, isto é, entre a marcação e a direção da mão. Passei a fita o mais horizontalmente que eu pude.
+Bíceps: com o braço dobrado e os biceps contraídos, procurei medir a maior parte do biceps, passando a fita da forma mais horizontal que pude.
+O peitoral eu medi de duas formas. Primeiro medi na altura dos mamilos, deixando a fita na horizontal, paralela ao chão, nivelada com os mamilos. Depois medi na altura das axilas, novamente, nivelado, em paralelo ao chão. Braços relaxados, caídos.
+Ao medir os ombros eu usei como referência um osso saltado que tenho. Passei a fita logo abaixo ao osso, paralelo ao chão, horizontal. Olhei no espelho se estava nivelado nas laterais e nas costas. Também olhei isso pra peitoral.
+Medi o abdomem/barriga usando o umbigo como referência, passando por cima dele. Fita também na horizontal.
+;br
+;h4 Inferior
+A bunda eu medi sem roupa, passando a fita imediatamente acima do pau e deixando o mais horizontal, paralelo ao chão, que possível.
+Usei como referência abaixo do osso do joelho para medir panturrilhas e coxas. É um ponto abaixo do joelho, que faz um certo "buraco" e fica do lado de dentro de cada perna. É imediatamente abaixo do joelho, acho que dá pra entender. Fiz essa medida puxando a fita pelo lado de dentro, sem passar por cima do joelho, com a perna esticada.
+Para a panturrilha, fiz uma marcação 10cm abaixo desse ponto e medi.
+Para as coxas, fiz três marcações: 20, 25, e 30 centímetros. Eu não sabia o local certo de medir na coxa, e mudando o local varia muito a medição, então resolvi medir em todos esses pontos. Fita sempre mais horizontal possível e abaixo das marcações, e fiz sentado, com as pernas em mais ou menos 90°. O mesmo pra panturrilha.
+O tornozelo eu medi acima dos ossos, não tem erro.
+;br
+
+;h4 Outros
+O peso foi medido ao acordar, depois de ir ao banheiro, antes de comer ou beber.
+A gordura corporal é uma ESTIMATIVA. Usei uma calculadora para estimar e não confio nela. Obviamente não tenho 9% de BF, mas deixei o resultado para comparar a diferença no futuro. 
+Confio mais na minha medida de olho, o olhomêtro. Olhando vários charts que mostram diferentes BFs, e usando ;url "https://www.youtube.com/watch?v=dKoTa5eP76M" "este vídeo" como referência, estimo que tenho na verdade entre 15% e 20% de BF. 
+É difícil estimar porque sou todo esquisito. Ao mesmo tempo que consigo ver minha costelas e pontas de osso em todo lugar (sou bem magro), minha veias não são tão aparentes e nenhum musculo é bem definido. Não sei, mas 11% ou 9% garanto que não tenho.
+;br
+
+;h2 Conclusão
+Registro feito. Daqui a seis meses ou um ano farei outra autoavaliação física.
+No momento estou só o osso. Não tenho muita gordura, mas também não tenho quase nada de músculo. Sou meio skinnyfat e todo estranhão.
+<!--ARTICLE-IS-SIGNED--> 
+<!--^Autoavaliação física^1736949612^💪^NEVER^no-rss^7afc74adbb3bd7fe6333247c2546e27c32bd76b2ec8381ef507bb6ce313dacc9^no-nice-date^musculação^-->

@@ -1,0 +1,135 @@
+;;Lista de tags: <ul class="mono">
+;;<li><a href='#tag-alegria'>alegria (1)</a></li> 
+;;<li><a href='#tag-arrependimento'>arrependimento (1)</a></li> 
+;;<li><a href='#tag-bitcoin'>bitcoin (1)</a></li> 
+;;<li><a href='#tag-blog'>blog (1)</a></li> 
+;;<li><a href='#tag-caatinga'>caatinga (1)</a></li> 
+;;<li><a href='#tag-cultura-pobre'>cultura-pobre (1)</a></li> 
+;;<li><a href='#tag-desemprego'>desemprego (1)</a></li> 
+;;<li><a href='#tag-fechamento'>fechamento (2)</a></li> 
+;;<li><a href='#tag-fracasso'>fracasso (2)</a></li> 
+;;<li><a href='#tag-inveja'>inveja (1)</a></li> 
+;;<li><a href='#tag-linux'>linux (1)</a></li> 
+;;<li><a href='#tag-merdeste'>merdeste (1)</a></li> 
+;;<li><a href='#tag-metas'>metas (1)</a></li> 
+;;<li><a href='#tag-musculação'>musculação (1)</a></li> 
+;;<li><a href='#tag-neetismo'>neetismo (1)</a></li> 
+;;<li><a href='#tag-pobreza'>pobreza (1)</a></li> 
+;;<li><a href='#tag-ricing'>ricing (1)</a></li> 
+;;<li><a href='#tag-tristeza'>tristeza (3)</a></li> 
+;;<li><a href='#tag-viagem'>viagem (1)</a></li> 
+;;<li><a href='#tag-vida-de-falho'>vida-de-falho (1)</a></li> 
+;;<li><a href='#tag-vitória'>vitória (1)</a></li> </ul>
+<br>
+;;<h3 id='tag-alegria'>alegria (1)</h3>
+;;<ul>
+;;<!-- 1733398356 --> <li><a href='../../r/r1/index.html'><span>🚀</span>&nbsp;<span class='color-weak' style='font-weight:normal'>05/12/2024</span>&nbsp;-&nbsp;<span>Um bitcoin = 100 mil dólares</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-arrependimento'>arrependimento (1)</h3>
+;;<ul>
+;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-bitcoin'>bitcoin (1)</h3>
+;;<ul>
+;;<!-- 1733398356 --> <li><a href='../../r/r1/index.html'><span>🚀</span>&nbsp;<span class='color-weak' style='font-weight:normal'>05/12/2024</span>&nbsp;-&nbsp;<span>Um bitcoin = 100 mil dólares</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-blog'>blog (1)</h3>
+;;<ul>
+;;<!-- 1732803004 --> <li><a href='../../r/r0/index.html'><span>🌄</span>&nbsp;<span class='color-weak' style='font-weight:normal'>28/11/2024</span>&nbsp;-&nbsp;<span>Retorno</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-caatinga'>caatinga (1)</h3>
+;;<ul>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-cultura-pobre'>cultura-pobre (1)</h3>
+;;<ul>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-desemprego'>desemprego (1)</h3>
+;;<ul>
+;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-fechamento'>fechamento (2)</h3>
+;;<ul>
+;;<!-- 1735351224 --> <li><a href='../../r/0/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>27/12/2024</span>&nbsp;-&nbsp;<span>Fechamento 2024</span></a></li>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-fracasso'>fracasso (2)</h3>
+;;<ul>
+;;<!-- 1735261268 --> <li><a href='../../r/r3/index.html'><span>📈</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/12/2024</span>&nbsp;-&nbsp;<span>Analisando minhas metas para 2024</span></a></li>
+;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-inveja'>inveja (1)</h3>
+;;<ul>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-linux'>linux (1)</h3>
+;;<ul>
+;;<!-- 1734467203 --> <li><a href='../../r/r2/index.html'><span>🍙</span>&nbsp;<span class='color-weak' style='font-weight:normal'>17/12/2024</span>&nbsp;-&nbsp;<span>Minha vida é uma bosta, mas meu rice está bonitão</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-merdeste'>merdeste (1)</h3>
+;;<ul>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-metas'>metas (1)</h3>
+;;<ul>
+;;<!-- 1735261268 --> <li><a href='../../r/r3/index.html'><span>📈</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/12/2024</span>&nbsp;-&nbsp;<span>Analisando minhas metas para 2024</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-musculação'>musculação (1)</h3>
+;;<ul>
+;;<!-- 1736949612 --> <li><a href='../../r/r4/index.html'><span>💪</span>&nbsp;<span class='color-weak' style='font-weight:normal'>15/01/2025</span>&nbsp;-&nbsp;<span>Autoavaliação física</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-neetismo'>neetismo (1)</h3>
+;;<ul>
+;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-pobreza'>pobreza (1)</h3>
+;;<ul>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-ricing'>ricing (1)</h3>
+;;<ul>
+;;<!-- 1734467203 --> <li><a href='../../r/r2/index.html'><span>🍙</span>&nbsp;<span class='color-weak' style='font-weight:normal'>17/12/2024</span>&nbsp;-&nbsp;<span>Minha vida é uma bosta, mas meu rice está bonitão</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-tristeza'>tristeza (3)</h3>
+;;<ul>
+;;<!-- 1735351224 --> <li><a href='../../r/0/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>27/12/2024</span>&nbsp;-&nbsp;<span>Fechamento 2024</span></a></li>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-viagem'>viagem (1)</h3>
+;;<ul>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-vida-de-falho'>vida-de-falho (1)</h3>
+;;<ul>
+;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-vitória'>vitória (1)</h3>
+;;<ul>
+;;<!-- 1733398356 --> <li><a href='../../r/r1/index.html'><span>🚀</span>&nbsp;<span class='color-weak' style='font-weight:normal'>05/12/2024</span>&nbsp;-&nbsp;<span>Um bitcoin = 100 mil dólares</span></a></li>
+;;</ul>
+<br>
+;;<!--ARTICLE-IS-SIGNED-->
+;;<!--^Tags^1738682103^🏷^NEVER^hidden no-rss no-comments unlisted^e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855^ <div>Saindo da Falha<br> Bloco 882294 (04/02/2025 12:15 terça-feira) (☀ 32°C Ensolarado) 1₿ valia 9320, Network fee: 4sat/vB.</div>^none^-->
+;;<!--^Tags^1738682103^🏷^1739300551^hidden no-rss no-comments unlisted^92d1d1eb77ec5066af3c5341ec9ea38467427cd39a5c17c236ae5050714ac646^ <div>Saindo da Falha<br> Bloco 882294 (04/02/2025 12:15 terça-feira) (☀ 32°C Ensolarado) 1₿ valia 9320, Network fee: 4sat/vB.</div>^none^-->

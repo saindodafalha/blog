@@ -1,0 +1,10 @@
+Do francês <i>journal</i>, do latim <i>diurnalis</i>, diário. Relatos diários.<br> Atualizações <s>quase</s> diárias do que venho <s>ou não</s> fazendo para sair da falha.<br><br>
+;;<div class="journal-item">
+;; <b>11/02/2024</b><br>
+;; <ul class="journal-border">
+;;  <li>Em breve...</li>
+;; </ul>
+;;</div>
+<!--ARTICLE-IS-SIGNED-->
+<!--^Journals^1739300498^📰^NEVER^unlisted no-rss no-comments hidden^993f61ae91736b88ec07d4d3f02abcb05b6806bea298a649b3fc2e2ac0f8c520^no-nice-date^none^-->
+<!--^Journals^1739300498^📰^1739300529^unlisted no-rss no-comments hidden^c1fd4317308265feb3d51b395e51d7115efacb86ee56c029bb47f7db56c94a1a^no-nice-date^none^-->

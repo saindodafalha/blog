@@ -1,0 +1,37 @@
+<span class="nav-section" style="visibility: hidden">
+   Left
+</span>
+
+<span class="nav-section">
+   <a class="nav-link" href="@URL-ROOT@/index.html">[Home]</a>
+   <a class="nav-link" href="@URL-ROOT@/rss.xml" target="_blank">[RSS]</a>
+   <a class="nav-link" href="@URL-ROOT@/index.html#contact">[Contato]</a>
+   <a class="nav-link" href="@URL-ROOT@/r/chat/index.html">[Chat]</a>
+   <!--   <a class="nav-link" href="@URL-ROOT@/r/journal/index.html">[Journal]</a> -->
+</span>
+
+<span class="nav-section" style="cursor: pointer; visibility: hidden">
+   <span  id="toggle-light-dark-theme"> <span onclick="lightTheme()">☀️</span> </span>
+</span>
+
+<!-- js - dark light themes -------------------------------------------------------------------------->
+<script>
+   function lightTheme() {
+      const fileDirBase = document.getElementById('css-root-theme').getAttribute('data');
+      document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'files/root-light.css');
+      localStorage.setItem('sdf-theme', 'light');
+      document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="defaultTheme()"  >🌒</span>';
+   }
+   
+   function defaultTheme() {
+      const fileDirBase = document.getElementById('css-root-theme').getAttribute('data');
+      document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'root.css');
+      localStorage.setItem('sdf-theme', 'default');
+      document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="lightTheme()"  >☀️</span>';
+
+   }
+
+   if (localStorage.getItem('sdf-theme')) {
+      if (localStorage.getItem('sdf-theme') == 'light') {lightTheme()};
+   }
+</script>

@@ -1,0 +1,49 @@
+#HCB_comment_box {
+   margin: 0;
+}
+
+.comment, #HCB_comment_form_box {	
+   text-align: left;
+}
+
+#HCB_comment_box .comment {	
+   margin-bottom: 0.5em!important;
+}
+
+#HCB_comment_form_box {	
+   padding-bottom: 0;
+}
+
+#HCB_comment_box blockquote {
+   border-width: 1px!important;
+   font-style: normal;
+}
+
+.hcb-like, .hcb-reply, .hcb-flag {
+   color: var(--fg-block-weak)!important;
+}
+
+#HCB_comment_box .author-name::before {
+   content: '🕵️ ';
+}
+
+#HCB_comment_box > h3:first-child {
+   visibility: hidden;
+}
+
+.hcb-icon {
+   display:none;
+}
+
+#hcb_form_content {
+   width: 70%;
+}
+
+.home-desc {
+   display:none;
+}
+
+#hcb_form_name, #hcb_form_content {
+   background: var(--bg-code)!important;
+   color: var(--fg-code)!important;
+}

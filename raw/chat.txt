@@ -1,0 +1,60 @@
+;;<script>
+;;   window.addEventListener("load", function(){
+;;     document.getElementById("chattable").contentWindow.postMessage(`
+;;      :root {
+;;--fg-block: #999;
+;;--bg-block: transparent;
+;;--font-size-block: 1.05em;
+;;--fg-block-weak: #919991;
+;;
+;;      }
+;;
+;;      body {
+;;         color: var(--fg-block);     
+;;         font-size: var(--font-size-block);
+;;         background: var(--bg-block);
+;;      }
+;;      
+;;      #top_banner{
+;;         display:none;
+;;      }
+;;
+;;      #settings {
+;;         background-color: var(--fg-block);
+;;         border-radius: 50%;
+;;      }
+;;
+;;      #textInput #input {
+;;         background: transparent;
+;;         color: var(--fg-block-weak);     
+;;         font-size: var(--font-size-block);
+;;         border-radius: 0;
+;;      }
+;;
+;;      #input:empty::before {
+;;         content: "Enviar mensagem...";
+;;         color: var(--fg-block-weak);
+;;      }
+;;
+;;      #emojiTrayToggle {
+;;          display:none;
+;;      }
+;;
+;;     `, "*");
+;;   });
+;;</script>
+;;
+;;<div>
+;;   <p class="color-weak mono-small" style="margin-bottom: 10px">Powered by <a href="https://chattable.neocities.org/">Chattable</a>.</p>
+;;   <iframe class="width-100" style="height:700px; border:none;" src='https://iframe.chat/embed/index.html?chat=19551309' id='chattable' frameborder='none'></iframe>
+;;</div>
+;;
+;;<style>
+;;#sideblock-chattable {display: none!important;}
+;;.page address {display: none!important;}
+;;.page hr, .page h1, .page .prev-next, .page br, .page #page-tags {display: none!important;}
+;;</style>
+
+
+<!--ARTICLE-IS-SIGNED--> 
+<!--^Livechat^1736855343^🗫^NEVER^unlisted no-rss no-comments hidden^2cce242a45cf79711a698d7f4e3f52d947b329d7ae5513f712e0376611418859^no-nice-date^none^-->

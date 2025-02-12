@@ -1,0 +1,55 @@
+/* SDF Black Green Theme */
+:root {
+   /* body  */
+   --bg-body: #000;
+
+   /* website container */
+   --bg-wc: transparent;
+   --fg-wc: #A0A0A0;
+   --font-wc: Verdana, sans-serif;
+
+   /* banner  */
+   --bg-banner: #151515;
+   --fg-banner: var(--fg-wc);
+   --font-site-name: monospace;
+   --font-motd: monospace;
+   --font-size-site-name: 5em;
+   --font-size-motd: 1.3em;
+   --text-align-banner: center;
+   --bg-bg-img-banner: url(./files/grad.png) repeat-x; 
+   --logo-img-banner: transparent; 
+/*   --logo-img-banner: url(./files/banner.png) no-repeat right top; */
+   --height-banner: 300px;
+
+   /* nav */
+   --bg-nav: #151515;
+   --fg-nav: var(--fg-wc);
+   --font-nav: Verdana, sans-serif;
+
+   /* block */
+   --bg-block: #151515;
+   --fg-block: var(--fg-wc);
+   --fg-block-weak: #919991;
+   --fg-block-strong: #E1E9E1;
+   --font-block: Verdana, sans-serif;
+   --font-size-block: 1.1em;
+   --margin-block: .7em;
+   --box-shadow-block: 0 4px 0 #222;
+   --padding-block: 1.2em;
+   --main-block-width: 100%;
+   --side-blocks-width: calc(100% - var(--main-block-width));
+   --border-left-side-blocks: transparent;
+
+   /* side blocks */
+   --bg-side-block-heading: var(--fg-block);
+   --fg-side-block-heading: var(--bg-block);
+   --text-align-side-block-heading: center;
+   --font-size-side-block: 0.95em;
+
+   /* misc */
+   --bg-table: #000;
+   --bg-code: #000;
+   --fg-code: #fff;
+   --color-hr: var(--fg-block-weak);
+}
+

@@ -1,0 +1,62 @@
+/* SDF Black Green Theme */
+:root {
+   /* body  */
+   --bg-body: #DADADA;
+
+   /* website container */
+   --bg-wc: #F3F1EF;
+   --fg-wc: #64625E;
+   --font-wc: Verdana, sans-serif;
+
+   /* banner  */
+   --fg-banner: var(--fg-wc);
+   --font-site-name: monospace;
+   --font-motd: monospace;
+   --font-size-site-name: 5em;
+   --font-size-motd: 1.3em;
+   --text-align-banner: center;
+   /*--bg-bg-img-banner: transparent; */
+   --bg-bg-img-banner: linear-gradient(lightgray, var(--bg-wc)), var(--bg-wc); 
+   /*--bg-bg-img-banner: url(./files/grad.png) repeat-x;*/
+   --logo-img-banner: transparent no-repeat right top; 
+   --height-banner: 300px;
+
+   /* nav */
+   --bg-nav: transparent;
+   --fg-nav: var(--fg-wc);
+   --font-nav: Verdana, sans-serif;
+
+   /* block */
+   --bg-block: var(--bg-nav);
+   --fg-block: var(--fg-wc);
+   --fg-block-weak: #AAA8A4;
+   --fg-block-strong: #8AA884;
+   --font-block: Verdana, sans-serif;
+   --font-size-block: 1.1em;
+   --margin-block: .7em;
+   --box-shadow-block: none;
+   /*--box-shadow-block: 0 4px 0 var(--fg-block-weak);*/
+   --padding-block: 1.2em;
+   --main-block-width: 75%;
+   --side-blocks-width: calc(100% - var(--main-block-width));
+
+   /* side blocks */
+   --fg-side-block-heading: var(--fg-block);
+   --bg-side-block-heading: transparent;
+   --text-align-side-block-heading: center;
+   --border-left-side-blocks: 2px solid #EBE9E7;
+   --font-size-side-block: 0.95em;
+
+   /* misc */
+   --bg-table: var(--bg-body);
+   --bg-code: var(--bg-body);
+   --fg-code: #777;
+   --color-hr: transparent;
+}
+
+.main-block {
+   background: transparent!important;
+}
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDF: Livechat</title>
+<link rel="stylesheet" href="../../root.css" id="css-root-theme" data="../../"> 
+<link rel="stylesheet" href="../../main.css"> 
+<link rel="icon" type="image/x-icon" href="../../files/favicon.ico">
+</head>
+<body>
+<div class="website-container">
+
+   <!-- header -->
+   <header class="banner-container">
+      <a href="../../index.html">
+         <div class="banner">
+            <h1 class="site-name">Saindo da Falha</h1>
+            <h2 class="motd">País do caralho.</h2>
+         
+         </div>
+      </a>
+   </header>
+
+   <!-- top nav -->
+   <nav class="block top-nav">   
+         <span class="nav-section" style="visibility: hidden"> Left </span> <span class="nav-section"> <a class="nav-link" href="../../index.html">[Home]</a> <a class="nav-link" href="../../rss.xml" target="_blank">[RSS]</a> <a class="nav-link" href="../../index.html#contact">[Contato]</a> <a class="nav-link" href="../../r/chat/index.html">[Chat]</a> <!-- <a class="nav-link" href="../../r/journal/index.html">[Journal]</a> --> </span> <span class="nav-section" style="cursor: pointer; visibility: hidden"> <span id="toggle-light-dark-theme"> <span onclick="lightTheme()">☀️</span> </span> </span> <!-- js - dark light themes --------------------------------------------------------------------------> <script> function lightTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'files/root-light.css'); localStorage.setItem('sdf-theme', 'light'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="defaultTheme()" >🌒</span>'; } function defaultTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'root.css'); localStorage.setItem('sdf-theme', 'default'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="lightTheme()" >☀️</span>'; } if (localStorage.getItem('sdf-theme')) { if (localStorage.getItem('sdf-theme') == 'light') {lightTheme()}; } </script>
+   </nav>
+
+   <!-- main page container-->
+   <div class="blocks-container">
+      
+      <!-- main page, posts, content, etc -->
+      <main class="block main-block">
+         
+<article class="page">
+   <h1>Livechat</h1>
+   <hr id="page-hr-separator-top">
+   <br>
+   <script>
+   window.addEventListener("load", function(){
+     document.getElementById("chattable").contentWindow.postMessage(`
+      :root {
+--fg-block: #999;
+--bg-block: transparent;
+--font-size-block: 1.05em;
+--fg-block-weak: #919991;
+
+      }
+
+      body {
+         color: var(--fg-block);     
+         font-size: var(--font-size-block);
+         background: var(--bg-block);
+      }
+      
+      #top_banner{
+         display:none;
+      }
+
+      #settings {
+         background-color: var(--fg-block);
+         border-radius: 50%;
+      }
+
+      #textInput #input {
+         background: transparent;
+         color: var(--fg-block-weak);     
+         font-size: var(--font-size-block);
+         border-radius: 0;
+      }
+
+      #input:empty::before {
+         content: "Enviar mensagem...";
+         color: var(--fg-block-weak);
+      }
+
+      #emojiTrayToggle {
+          display:none;
+      }
+
+     `, "*");
+   });
+</script>
+
+<div>
+   <p class="color-weak mono-small" style="margin-bottom: 10px">Powered by <a href="https://chattable.neocities.org/">Chattable</a>.</p>
+   <iframe class="width-100" style="height:700px; border:none;" src='https://iframe.chat/embed/index.html?chat=19551309' id='chattable' frameborder='none'></iframe>
+</div>
+
+<style>
+#sideblock-chattable {display: none!important;}
+.page address {display: none!important;}
+.page hr, .page h1, .page .prev-next, .page br, .page #page-tags {display: none!important;}
+</style>
+<p><!--ARTICLE-IS-SIGNED--> </p>
+<p><!--^Livechat^1736855343^🗫^NEVER^unlisted no-rss no-comments hidden^2cce242a45cf79711a698d7f4e3f52d947b329d7ae5513f712e0376611418859^no-nice-date^none^--></p>
+   <br>
+   <span class="color-weak mono-small"></span>
+   <address>
+      Saindo da Falha<br>Tuesday, 14/01/2025 08:49
+   </address>
+   <span id="page-tags">Tags: <a href='../tags/index.html#tag-none'>none</a> </span>
+   <hr id="page-hr-separator-bottom">
+   
+   <div class="prev-next"> <span><a href="../../index.html">[Home]</a></span> </div>
+</article>
+      </main>
+
+      <!-- side menu, projects, navigation, etc -->
+      <aside class="side-blocks">
+         
+      </aside>
+   </div>
+
+   <!-- site footer -->
+   <footer>
+      <i></i>
+   </footer>
+</div>
+</body>
+</html> 

@@ -1,0 +1,12 @@
+Estou de volta. 
+;br
+Ainda não tenho nada de interessante para postar aqui, mas reformei o blog completamente e agora ele está bonitão.
+Mas não é só a aparência que mudou, o conteúdo também irá mudar. Vou continuar postando o que já postava, mas agora também postarei sobre qualquer outra coisa que se passar na minha cabeça. Ou seja, o escopo do blog ficou maior e agora você pode ser surpreendido por qualquer assunto aleatório.
+;br
+O link do novo feed RSS é o mesmo, não mudou.
+Arquivo do blog antigo: ;url "https://github.com/saindodafalha/saindodafalha-old" "[Arquivo]"
+;br
+Por hora é só.
+<!--ARTICLE-IS-SIGNED--> 
+<!--^Retorno^1732803004^🌄^NEVER^no-rss^4c59db6291741fca02683960684daba1689b9e7088a03080954e9c9c17d86068^no-nice-date^blog^-->
+<!--^Retorno^1732803004^🌄^1733747354^no-rss^0c28db8e5107ac357abe8a900721b5900e27ef0b1fa2915994de0ac26127aecf^no-nice-date^blog^-->

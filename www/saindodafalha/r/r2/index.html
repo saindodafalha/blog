@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDF: Minha vida é uma bosta, mas meu rice está bonitão</title>
+<link rel="stylesheet" href="../../root.css" id="css-root-theme" data="../../"> 
+<link rel="stylesheet" href="../../main.css"> 
+<link rel="icon" type="image/x-icon" href="../../files/favicon.ico">
+</head>
+<body>
+<div class="website-container">
+
+   <!-- header -->
+   <header class="banner-container">
+      <a href="../../index.html">
+         <div class="banner">
+            <h1 class="site-name">Saindo da Falha</h1>
+            <h2 class="motd">País do caralho.</h2>
+         
+         </div>
+      </a>
+   </header>
+
+   <!-- top nav -->
+   <nav class="block top-nav">   
+         <span class="nav-section" style="visibility: hidden"> Left </span> <span class="nav-section"> <a class="nav-link" href="../../index.html">[Home]</a> <a class="nav-link" href="../../rss.xml" target="_blank">[RSS]</a> <a class="nav-link" href="../../index.html#contact">[Contato]</a> <a class="nav-link" href="../../r/chat/index.html">[Chat]</a> <!-- <a class="nav-link" href="../../r/journal/index.html">[Journal]</a> --> </span> <span class="nav-section" style="cursor: pointer; visibility: hidden"> <span id="toggle-light-dark-theme"> <span onclick="lightTheme()">☀️</span> </span> </span> <!-- js - dark light themes --------------------------------------------------------------------------> <script> function lightTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'files/root-light.css'); localStorage.setItem('sdf-theme', 'light'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="defaultTheme()" >🌒</span>'; } function defaultTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'root.css'); localStorage.setItem('sdf-theme', 'default'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="lightTheme()" >☀️</span>'; } if (localStorage.getItem('sdf-theme')) { if (localStorage.getItem('sdf-theme') == 'light') {lightTheme()}; } </script>
+   </nav>
+
+   <!-- main page container-->
+   <div class="blocks-container">
+      
+      <!-- main page, posts, content, etc -->
+      <main class="block main-block">
+         
+<article class="page">
+   <h1>Minha vida é uma bosta, mas meu rice está bonitão</h1>
+   <hr id="page-hr-separator-top">
+   <br>
+   <p>Nada a ver com o assunto principal do blog, mas eu estava para formatar meu computador, como gosto de fazer de tempos em tempos, quando me veio a ideia de que eu deveria "arroizar" meu ambiente desta vez.</p>
+<br>
+<p>Nunca me preocupei com ricing, eu apenas instalava o dwm com um ou dois patches, não usava nem cores, e deixava de qualquer jeito. Na imagem, o setup que eu usei durante este ano:</p>
+<br>
+<br> 
+<img src="https://raw.githubusercontent.com/saindodafalha/sdf-autorice/refs/heads/master/doc/p-2-old-rice.png" style="width:100%">
+<br> 
+<br> 
+<p>Eu não ligava muito para costumização de ambiente, apenas instalava, deixava literalmente duas cores no dwm (branco e preto) e usava aquela merda feiosa com terminais pretos de cansar os olhos. O wallpaper é novidade, a maior parte do ano eu usava um fundo preto. Feio pra caralho e muito básico, pois dwm por si só não traz quase nada e eu não tinha muitos patches.</p>
+<br>
+<p>Toda vez que eu instalava um sistema novo eu apenas copiava os dotfiles e instalava essa merda horrível e sem graça porque eu tinha preguiça de deixar meu ricing bonitão. Mas desta vez foi diferente, agora eu resolvi que iria fazer um ricing LINDO e EFICIENTE, com todos os patches que eu precisava.</p>
+<br>
+<h2>Regras para o meu novo rice</h2>
+<p>Antes de fazer qualquer coisa, eu decidi primeiro o que eu precisava. As regras eram:</p>
+<ul>
+<li>O ricing seria completamente a nível de usuário, de forma que eu possa instalar independentemente para vários usuários no meu sistema e ter ambientes completamente diferentes para cada usuário.</li>
+<li>Tudo ficaria reúnido em um diretório, de forma organizada.</li>
+<li>Tem que ser extremamente fácil de instalar. </li>
+</ul>
+<br>
+<h3>Por quê?</h3>
+<p>Uma das razões é que eu gosto de ter vários usuários no meu computador pessoal. Um para ficar procrastinando na internet, um para estudos, outro para criptoputarias... tenho até um usuário SDF só para este blog. Se eu instalar, digamos, o dwm a nível de sistema com <span class="inline-code">sudo make install</span>, o config.def.h é aplicado para todo o sistema e eu não quero isso. Quero um ambiente diferente para cada usuário. </p>
+<br>
+<p>A razão para a segunda regra é por questão de organização e portabilidade. Com tudo em um único diretório eu posso transferir meu ricing facilmente entre sistemas, e, como veremos adiante, eu encontrei um forma muito eficiente de fazer isso usando hardlinks. </p>
+<br>
+<p>Por fim, eu queria que fosse fácil de instalar mesmo quando eu não pudesse transferir meu diretório $RICE. Por exemplo, eu gosto de brincar com VMs e queria instalar meu ambiente nelas automaticamente, com um comando. Por isso fiz um script de instalação.</p>
+<br>
+<h2>Softwares da suckless e seus patches</h2>
+<p>Eu usei o dwm, dmenu, st, slstatus e slock, com os patches:</p>
+<ul>
+<li>dwm-fullgaps <br> Adiciona lacunas entre as janelas.</li>
+<li>dwm-status2d <br> Permite cores na barra de status.</li>
+<li>dwm-pertag <br> Faz com que a configuração de cada tag seja independente.</li>
+<li>dwm-movestack <br> Permite mover uma janela no stack.</li>
+<li>dwm-bottomstack <br> Adciona dois novos layouts.</li>
+<li>dwm-clientopacity <br> Adiciona opacidade nas janelas focadas e não focadas.</li>
+<li>dmenu-center <br> Centraliza o dmenu.</li>
+<li>st-alpha <br> Adiciona opacidade ao st.</li>
+<li>st-dracula <br> Esquema de cores para o st.</li>
+<li>st-scrollback <br> Permite scrollar no st.</li>
+<li>st-scrollback-mouse <br> O mesmo, mas com o mouse.</li>
+<li>slock-message <br> Mensagem personalizada na tela de bloqueio.</li>
+</ul>
+<br>
+<p>Não vou explicar cada um para não escrever demais, você pode olhar no site da suckless, mas esses patches deixam tudo muito melhor. Só faltou um cfacts que eu ESQUECI e só lembrei AGORA enquanto escrevo isso, mas foda-se. Vai ficar sem cfacts. </p>
+<br>
+<p>Fora os softwares da suckless, também instalei um sistema de notificações com dunst e notify-send, e uso o xbindkeys para keybindings e o crontab (existe outro?) para automação.</p>
+<br>
+<h2>Minha convenção para o diretório $RICE</h2>
+<p>Criei uma convenção para manter tudo organizado:</p>
+<div class="code">
+<p>Estrutura do diretório .rice:</p>
+<p>- api: scripts que criam ou manipulam arquivos *.dat em $RICE/var</p>
+<p>- bin: binários e scripts executáveis</p>
+<p>- doc: documentação</p>
+<p>- env: arquivos *.env "sourceáveis"</p>
+<p>- etc: hardlinks para arquivos de configuração</p>
+<p>- log: logs gerados por scripts do rice</p>
+<p>- src: código fonte de alguns binários</p>
+<p>- var: arquivos *.dat usados por scripts do ambiente</p>
+<p>- wal: wallpapers</p>
+</div>
+<br>
+<p>Vou explicar: $RICE/src é onde ficam os softwares suckless. Eles são compilados com <span class="inline-code">make</span>, nunca <span class="inline-code">sudo make install</span>, e o binário resultante fica lá também. </p>
+<br>
+<p>Em $RICE/bin ficam softlinks para esses binários. O $RICE/bin vai estar presente no $PATH. Lá também vivem outros scripts usados pelo ambiente, como o script que gera a barra de status, ou o script que instala os config files de $RICE/etc no sistema. </p>
+<br>
+<p>Por falar em $RICE/etc, lá ficam hardlinks para config files que podem estar em qualquer lugar do sistema. Por exemplo, a configuração do vim está em ~/.vimrc, e $RICE/etc/vim/vimrc é um hardlink para ela. Assim você mantém todos os config files do sistema em um só diretório por praticidade e também para facilmente portar para outro sistema ou para outro usuário no sistema. </p>
+<br>
+<p>Os arquivos em $RICE/env são "sourceados" pelo ~/.bashrc. Lá ficam variáveis de ambiente, o prompt, aliases, etc. </p>
+<br>
+<p>O diretório $RICE/api e $RICE/var são irmãos. Em $RICE/api ficam scripts menores que são chamados pelo cron ou pelo xbindkeys. Por exemplo, um cronjob a cada 5 minutos executa um script de "curlar" o preço do bitcoin, ou a temperatura atual, etc. Este script deve ficar em $RICE/api. E onde ele vai guardar essa informação? Em $RICE/var. Lá ficam arquivos *.dat variáveis, gerados pelos scripts em $RICE/api. Alguns também podem escrever em $RICE/log, que é onde ficam os logs gerados pelo ambiente. Lá se pode guardar coisas como logs de erro ou logs gerados por scripts em $RICE/api, como um histórico do uso da CPU ou algo assim. </p>
+<br>
+<p>Em $RICE/doc fica uma pequena explicação desta estrutura e é um espaço para escrever algo sobre o ambiente, como TODOs, etc. Por fim, $RICE/wal guarda wallpapers.</p>
+<br>
+<h2>Como ficou meu ricing?</h2>
+<p>Meu ricing recém instalado ficou assim: </p>
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/saindodafalha/sdf-autorice/refs/heads/master/doc/p-2-new-rice-1.png" style="width:100%">
+<br>
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/saindodafalha/sdf-autorice/refs/heads/master/doc/p-2-new-rice-2.png" style="width:100%">
+<br> 
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/saindodafalha/sdf-autorice/refs/heads/master/doc/p-2-new-rice-3.png" style="width:100%">
+<br>
+<br>
+<p>Simplesmente lindo e não cansa os olhos. Eu não sei por que eu nunca fiz isso antes.</p>
+<p>É uma instalação bem básica, só está presente coisas que eu sei que sempre irei usar em qualquer sistema. </p>
+<p>O resto eu configuro independentemente para cada usuário.</p>
+<br>
+<h2>Script de instalação</h2>
+<p>Já que eu vou instalar essa coisa em VMs quero que seja muito fácil de instalar e por isso escrevi um script de instalação.</p>
+<p>Vou deixar documentado aqui para eu não esquecer e para quem quiser testar meu rice. Abaixo, como instalar meu ricing lindão.</p>
+<br>
+<p>Esta coisa foi feita para funcionar em um Debian 12 recém instalado sem nenhum DE. Não testei isso em nenhum outro contexto.</p>
+<br>
+<h4>Dependências:</h4>
+<p>Para instalar as dependências rode do tty de um Debian 12 recém instalado:</p>
+<div class="code"> 
+<p>$ sudo apt install make gcc patch libxrandr-dev libx11-dev libxft-dev libxinerama-dev xorg dunst libnotify-bin xbindkeys feh fonts-font-awesome fonts-noto-color-emoji pulseaudio picom</p>
+</div> 
+<br>
+<h3>Instalando meu ricing</h3>
+<p>Baixe e rode o script de instalação:</p>
+<div class="code">
+<p>$ wget https://raw.githubusercontent.com/saindodafalha/sdf-autorice/refs/heads/master/autorice.sh</p>
+<p>$ chmod u+x autorice.sh</p>
+<p>$ ./autorice.sh</p>
+</div>
+<br>
+<p>Ao final, rode:</p>
+<div class="code">$ source ~/.profile && startx</div>
+<br>
+<p>Pronto, está instalado. Simple assim. A parte mais demorada é a instalação das dependências, já o ricing leva menos de dois minutos.</p>
+<br>
+<h3>Observações importantes</h3>
+<br>
+<h4>Pulseaudio</h4>
+<p>Por padrão, o Debian sem DE vem com o áudio mutado. O script de instalação tenta arrumar o áudio automaticamente, mudando pra 50% e tirando do mudo.</p>
+<p>Porém, nem sempre funciona e, quando não funciona, você pode simplesmente fazer isso manualmente, o que não é difícil.</p>
+<p>Em $RICE/env/globals.env existe a variável de ambiente MY_PACTL_SINK com o valor 0. É o sink do pulseaudio que acredito que o padrão seja 0. Caso o seu sink seja outro, por exemplo, 1, você precisará mudar essa variável e relogar para os keybindings de volume funcionarem.</p>
+<br>
+<h4>Virtualbox</h4>
+<p>Às vezes o Virtualbox não reconhece direito minhas teclas de função. Quando digito <kbd>SUPER + F2</kbd>, ao invés de sair MOD4 + F2, sai MOD4 + SuperL. Meus bindings de volume usam as teclas de função e por isso não funcionam no Virtualbox. Acho que isso é coisa do meu teclado vagabundo, mas se acontecer com você é só mudar os bindings para outras teclas.</p>
+<br>
+<h4>Emojis no dwm/dmenu</h4>
+<p>Se você quiser emojis funcionando na barra do dwm, veja: <a target="_blank" href="https://youtu.be/MjDkSm60RiQ?si=f9-htNPX2omiZPAV&t=141">EMOJIS no DWM/DWMBLOCKS/DMENU/ST sem o LIBXFT-BGRA</a></p>
+<br>
+<h4>Slock</h4>
+<p>Para o slock funcionar com usuários que não são o root, faça isso:</p>
+<div class="code">
+<p>$ cd $RICE/src/slock-1.5/</p>
+<p>$ sudo chown root:root ./slock</p>
+<p>$ sudo chmod u+s ./slock</p>
+</div>
+<br>
+<h2>Conclusão</h2>
+<p>Eu achava que isso de ficar customizando a distro era frescura, mas realmente faz uma enorme diferença. Eu espero não precisar fazer isso nunca mais, porque é chato e toma tempo. </p>
+<p>No final valeu a pena. Ficou muito melhor e não precisarei fazer isso nunca mais porque é só rodar um script. </p>
+<p>E eu nunca sei se o termo certo em "português" seria "rice" ou "ricing". Aliás, por que o nome disso sequer é rice?</p>
+<p><!--ARTICLE-IS-SIGNED--> </p>
+<p><!--^Minha vida é uma bosta, mas meu rice está bonitão^1734467203^🍙^NEVER^unlisted^01d846a79b5e9d56eff54daacdfaa32b18981e15c194ba616767e9d6b5547a89^<div>Saindo da Falha<br>Bloco 875198 (17/12/2024) <br>Numa tardinha ensolarada e quente de terça-feira.<br>Quando 1₿ valia $106229 e a taxa de rede custava 8sat/vB.</div>^linux ricing^--></p>
+<p><!--^Minha vida é uma bosta, mas meu rice está bonitão^1734467203^🍙^1736539435^unlisted no-rss^dfbd30ef62741180b0d8c7cadd7ce5cbf853fc51377963d46177b0f990d3bb3d^<div>Saindo da Falha<br>Bloco 875198 (17/12/2024) <br>Numa tardinha ensolarada e quente de terça-feira.<br>Quando 1₿ valia $106229 e a taxa de rede custava 8sat/vB.</div>^linux ricing^--></p>
+   <br>
+   <span class="color-weak mono-small">Última atualização: 10/01/2025 17:03<br><br></span>
+   <address>
+      Saindo da Falha<br>Tuesday, 17/12/2024 17:26
+   </address>
+   <span id="page-tags">Tags: <a href='../tags/index.html#tag-linux'>linux</a> 
+<a href='../tags/index.html#tag-ricing'>ricing</a> </span>
+   <hr id="page-hr-separator-bottom">
+   <br>
+<h3>Comentários:</h3>
+<div id="HCB_comment_box" style="text-align:center"><span style="cursor:pointer;" id="load-comments" onclick="this.innerHTML='Carregando...'">💬 Carregando comentários...</span></div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+
+<script type="text/javascript" id="hcb">
+   document.getElementById("load-comments").addEventListener('click', loadComments);
+   function loadComments() {
+      if (!window.hcb_user) {
+        hcb_user = {};
+      }(function() {
+        let s = document.createElement("script"),
+            l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+            h = "https://www.htmlcommentbox.com";
+        s.setAttribute("type", "text/javascript");
+        s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24noOeNoU2cppcTsbYgYRgn%2F" + "&opts=16798&num=10&ts=1734891859180");
+        if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+      })(); 
+   }
+   loadComments() // Carregar automaticamente
+</script>
+
+<br>
+<p class="color-weak mono-small">Powered by <a href="https://www.htmlcommentbox.com/">HTML Comment Box</a>.</p>
+<br>
+   <div class="prev-next"> <span><a href="../../index.html">[Home]</a></span> </div>
+</article>
+      </main>
+
+      <!-- side menu, projects, navigation, etc -->
+      <aside class="side-blocks">
+         
+      </aside>
+   </div>
+
+   <!-- site footer -->
+   <footer>
+      <i></i>
+   </footer>
+</div>
+</body>
+</html> 

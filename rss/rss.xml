@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>@WEBSITE-NAME@</title>
+<link>@WEBSITE-URL@</link>
+<description>@RSS-DESC@</description>
+<lastBuildDate>@LAST-BUILD-DATE@</lastBuildDate>
+@ITEMS-LIST@
+</channel>
+</rss>

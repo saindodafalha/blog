@@ -1,0 +1,67 @@
+<div class="block" id="sideblock-chattable">
+   <a href="https://chattable.neocities.org/" target="_blank" style="text-decoration:none;display:flex;justify-content:center">
+      <!-- <img src="https://chattable.neocities.org/chattable-alt.gif" title="Chattable" alt="Chattable"/> -->
+      <div class="side-block-heading">Chattable</div>
+   </a>
+
+   <script>
+      window.addEventListener("load", function(){
+        document.getElementById("chattable").contentWindow.postMessage(`
+         :root {
+   --fg-block: #999;
+   --bg-block: transparent;
+   --font-size-block: 1.05em;
+   --fg-block-weak: #919991;
+
+         }
+
+         body {
+            color: var(--fg-block);     
+            font-size: var(--font-size-block);
+            background: var(--bg-block);
+         }
+         
+         #top_banner{
+            display:none;
+         }
+
+         #settings {
+            background-color: var(--fg-block);
+            border-radius: 50%;
+         }
+
+         #textInput {
+            padding-top: 20px;
+         }
+         #textInput #input {
+            background: transparent;
+            color: var(--fg-block-weak);     
+            font-size: var(--font-size-block);
+            border-radius: 0;
+         }
+
+         #input:empty::before {
+            content: "Enviar mensagem...";
+            color: var(--fg-block-weak);
+         }
+
+         #emojiTrayToggle {
+             display:none;
+         }
+
+        `, "*");
+      });
+   </script>
+
+   <div>
+      <iframe class="width-100" style="height:300px; border: none;" src='https://iframe.chat/embed/index.html?chat=19551309' id='chattable' frameborder='none'></iframe>
+   </div>
+
+</div>
+
+<!--
+<div class="block">
+   <div class="aside-heading">Title</div>
+   Content
+</div>
+-->

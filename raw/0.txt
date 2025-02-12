@@ -1,0 +1,236 @@
+Voltando com os fechamentos mensais.
+O último foi em julho, mas me bateu uma tristeza naquela época e parei com tudo. Agora estamos de volta.
+;br
+
+;h2 Fechamento Financeiro
+O Preço do Bitcoin explodiu e me deu um resultado ainda melhor do que no ano passado.
+Todo o ganho que tive neste ano eu devo ao Bitcoin. Não trabalhei neste ano. No máximo, ajudei conhecidos e recebi 20, 50 reais por isso.
+Fora isso, só ganhei dinheiro no meu aniversário, que alguns parentes me deram de presente e juntando tudo deve ter dado uns 300 reais.
+E, quase me esqueço, ganhei 2 mil da venda de uma vaca que eu tinha.
+Gastei foi muito dinheiro com CNH e faculdade. Mas o plano all-in em Bitcoin têm funcionado e me ajudado muito. Mas até quando?
+Estamos perto do topo, se é que não já alcançamos. Quando vai começar a cair? Fevereiro? Abril? Talvez agora? Não está longe.
+A vaca não irá dar leite pra sempre e minha sorte logo vai acabar. Eu só espero ter a sabedoria de vender na hora certa.
+;br
+
+;h4 Histórico mensal
+;^table
+;^tr 
+;;<th>Mês</th> 
+;;<th>Total (R$)</th> 
+;;<th>Dif. (R$)</th> 
+;;<th>Dif. (%)</th>  
+;$tr
+;^tr 
+;td DEZ/2022 
+;td 12896.71 
+;td - 
+;td - 
+;$tr
+;^tr 
+;td JAN/2023 
+;td 14694.94 
+;td 1798.23 
+;td 13.9 
+;$tr
+;^tr 
+;td FEV/2023 
+;td 15969.19 
+;td 1274.25 
+;td 8.7 
+;$tr
+;^tr 
+;td MAR/2023 
+;td 18552.63 
+;td 2583.44 
+;td 16.2 
+;$tr
+;^tr 
+;td ABR/2023 
+;td 19394.97 
+;td 842.34 
+;td 4.5 
+;$tr
+;^tr 
+;td MAI/2023 
+;td -
+;td - 
+;td -
+;$tr
+;^tr 
+;td JUN/2023 
+;td 21113.21 
+;td - 
+;td - 
+;$tr
+;^tr 
+;td JUL/2023 
+;td 21543.67 
+;td 430.46 
+;td 2.0 
+;$tr
+;^tr 
+;td AGO/2023 
+;td 18931.26 
+;tdred -2612.41 
+;tdred -12.1 
+;$tr
+;^tr 
+;td SET/2023 
+;td 20760.37 
+;td 1829.11 
+;td 9.7 
+;$tr
+;^tr 
+;td OUT/2023 
+;td 27229.65 
+;td 6469.28 
+;td 31.2 
+;$tr
+;^tr 
+;td NOV/2023 
+;td 27264.51 
+;td 34.86 
+;td 0.1 
+;$tr
+;^tr 
+;td DEZ/2023 
+;td 28833.30 
+;td 1568.79 
+;td 5.8 
+;$tr
+;^tr 
+;td JAN/2024 
+;td 28841.19 
+;td 7.89 
+;td 0.00 
+;$tr
+;^tr 
+;td FEV/2024 
+;td 38774.63 
+;td 9933.44 
+;td 34.40 
+;$tr
+;^tr 
+;td MAR/2024 
+;td 44477.87 
+;td 5703.24 
+;td 14.70 
+;$tr
+;^tr 
+;td ABR/2024 
+;td 37072.56 
+;tdred -7405.31 
+;tdred -16.64 
+;$tr
+;^tr 
+;td MAI/2024 
+;td 42649.62 
+;td 5577.06 
+;td 15.04 
+;$tr
+;^tr 
+;td JUN/2024 
+;td 40559.49 
+;tdred -2090.13 
+;tdred -4.90 
+;$tr
+;^tr 
+;td JUL/2024 
+;td 43270.02 
+;td 2710.53 
+;td 6.68 
+;$tr
+;^tr 
+;td AGO/2024 
+;td - 
+;td - 
+;td - 
+;$tr
+;^tr 
+;td SET/2024 
+;td - 
+;td - 
+;td - 
+;$tr
+;^tr 
+;td OUT/2024 
+;td - 
+;td - 
+;td - 
+;$tr
+;^tr 
+;td NOV/2024 
+;td 59099.97
+;td -  
+;td -
+;$tr
+;^tr 
+;td DEZ/2024 
+;td 66608.00
+;td 7508.03  
+;td 12.70
+;$tr
+;$table
+;br
+
+;h4 Histórico anual
+;^table
+;^tr 
+;;<th>Ano</th> 
+;;<th>Total (R$)</th> 
+;;<th>Dif. (R$)</th> 
+;;<th>Dif. (%)</th>  
+;$tr
+;^tr 
+;td 2022 
+;td 12896.71 
+;td - 
+;td - 
+;$tr
+;^tr 
+;td 2023 
+;td 28833.30 
+;td 15936.59
+;td 123.57
+;$tr
+;^tr 
+;td 2024 
+;td 66608.00
+;td 37774.70
+;td 131.01
+;$tr
+;$table
+;br
+
+Não tem muito mais o que dizer. Bitcoin faz 88.92% do meu patromônio hoje. Não sei quanto vou vender quando chegar a hora, mas não será tudo. 
+Tenho medo de vender e não conseguir recomprar no futuro. E, afinal, o que vou fazer com o dinheiro? Deixar derretendo em real? Ainda não sei direito o que fazer no inverno crípto.
+;br
+
+;h2 Fechamento Físico
+No final de 2023 eu havia progredido de conseguir fazer 3 barras para conseguir fazer 10 barras. Entrou 2024, eu relaxei e hoje consigo no máximo 4.
+Eu estou ficando mais fraco e mais cansado, sem folego. Neste ano eu não levei nada de exercício a sério. Nada. 
+Comprei uma corda e comecei a pular, é bom. Mas nunca consegui mais de 3 minutos pulando direto. Vejo na internet pessoas falando que conseguem 30 minutos, uma hora. Fico impressionado com isso. É muito difícil.
+E outra, sempre que pulo demais acabo com canelite. Só posso pular em dias alternados, às vezes mesmo assim eu me lasco. Talvez eu tenha genética ruim pra isso, minhas pernas são extremamente finas e não aguentam o tranco. Nem é um exercício tão pesado assim.
+Alimentação é a mesma coisa. Neste ano eu não dei uma foda pra nada. Só comi porcaria.
+Minha saúde deve ter piorado muito, devo ter perdido uns dois anos de vida com tanto descuido.
+;br
+
+;h2 Fechamento de Sanidade Mental
+Foi só tristeza. Acho que fiquei mais maluco. Tenho certeza que tanto estresse vai me matar cedo. Não estou brincando.
+Existe uma correlação muito forte entre estresse e morte precoce. Também existe relação com essa vida triste que levo e morte precoce. 
+Geralmente quem vive estressado e com a autoestima baixa não vive muito. Quem se odeia fica doente e morre cedo.
+;br
+Vida social, zero. Hobbies, zero. Tristeza, dor e sofrimento. Eu virei um reclamão também. Não, mentira, eu já era. Mas eu nem disfarço mais.
+Neblina mental, eu me sinto cansado mentalmente o tempo inteiro, sempre parece que meu cérebro está meio apagado e me sinto lerdo e tonto.
+Não consigo ter pensamento claro mais. Não consigo ter atenção e foco como antes. A isso eu culpo o excesso de informação e a tristeza.
+Triste tristeza. 
+;br
+
+;h2 Conclusão
+A conclusão é que 2024 foi o pior ano da minha vida em todos os aspéctos. EXCETO no financeiro. No financeiro foi o melhor ano.
+Não sei o que esperar de 2025 e não farei planos por enquanto porque estou deprimido e confuso ultimamente. Vamos ver o que vem por aí.
+;br
+Vai pra puta que pariu, dois mil e vinte e quatro.
+Feliz ano novo a todos.
+<!--ARTICLE-IS-SIGNED--> 
+<!--^Fechamento 2024^1735351224^📊^NEVER^defaults^de5ebaf5cfe794d42374740de8651f6d780c966db68dd9bcce0632262647251c^ <div>Saindo da Falha<br> Bloco 876677 (27/12/2024 23:00 sexta-feira) (☀️ 19°C Limpo) 1₿ valia $94250, Network fee: 4sat/vB.</div>^fechamento tristeza^-->

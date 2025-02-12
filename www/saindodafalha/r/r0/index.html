@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDF: Retorno</title>
+<link rel="stylesheet" href="../../root.css" id="css-root-theme" data="../../"> 
+<link rel="stylesheet" href="../../main.css"> 
+<link rel="icon" type="image/x-icon" href="../../files/favicon.ico">
+</head>
+<body>
+<div class="website-container">
+
+   <!-- header -->
+   <header class="banner-container">
+      <a href="../../index.html">
+         <div class="banner">
+            <h1 class="site-name">Saindo da Falha</h1>
+            <h2 class="motd">País do caralho.</h2>
+         
+         </div>
+      </a>
+   </header>
+
+   <!-- top nav -->
+   <nav class="block top-nav">   
+         <span class="nav-section" style="visibility: hidden"> Left </span> <span class="nav-section"> <a class="nav-link" href="../../index.html">[Home]</a> <a class="nav-link" href="../../rss.xml" target="_blank">[RSS]</a> <a class="nav-link" href="../../index.html#contact">[Contato]</a> <a class="nav-link" href="../../r/chat/index.html">[Chat]</a> <!-- <a class="nav-link" href="../../r/journal/index.html">[Journal]</a> --> </span> <span class="nav-section" style="cursor: pointer; visibility: hidden"> <span id="toggle-light-dark-theme"> <span onclick="lightTheme()">☀️</span> </span> </span> <!-- js - dark light themes --------------------------------------------------------------------------> <script> function lightTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'files/root-light.css'); localStorage.setItem('sdf-theme', 'light'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="defaultTheme()" >🌒</span>'; } function defaultTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'root.css'); localStorage.setItem('sdf-theme', 'default'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="lightTheme()" >☀️</span>'; } if (localStorage.getItem('sdf-theme')) { if (localStorage.getItem('sdf-theme') == 'light') {lightTheme()}; } </script>
+   </nav>
+
+   <!-- main page container-->
+   <div class="blocks-container">
+      
+      <!-- main page, posts, content, etc -->
+      <main class="block main-block">
+         
+<article class="page">
+   <h1>Retorno</h1>
+   <hr id="page-hr-separator-top">
+   <br>
+   <p>Estou de volta. </p>
+<br>
+<p>Ainda não tenho nada de interessante para postar aqui, mas reformei o blog completamente e agora ele está bonitão.</p>
+<p>Mas não é só a aparência que mudou, o conteúdo também irá mudar. Vou continuar postando o que já postava, mas agora também postarei sobre qualquer outra coisa que se passar na minha cabeça. Ou seja, o escopo do blog ficou maior e agora você pode ser surpreendido por qualquer assunto aleatório.</p>
+<br>
+<p>O link do novo feed RSS é o mesmo, não mudou.</p>
+<p>Arquivo do blog antigo: <a target="_blank" href="https://github.com/saindodafalha/saindodafalha-old">[Arquivo]</a></p>
+<br>
+<p>Por hora é só.</p>
+<p><!--ARTICLE-IS-SIGNED--> </p>
+<p><!--^Retorno^1732803004^🌄^NEVER^no-rss^4c59db6291741fca02683960684daba1689b9e7088a03080954e9c9c17d86068^no-nice-date^blog^--></p>
+<p><!--^Retorno^1732803004^🌄^1733747354^no-rss^0c28db8e5107ac357abe8a900721b5900e27ef0b1fa2915994de0ac26127aecf^no-nice-date^blog^--></p>
+   <br>
+   <span class="color-weak mono-small">Última atualização: 09/12/2024 09:29<br><br></span>
+   <address>
+      Saindo da Falha<br>Thursday, 28/11/2024 11:10
+   </address>
+   <span id="page-tags">Tags: <a href='../tags/index.html#tag-blog'>blog</a> </span>
+   <hr id="page-hr-separator-bottom">
+   <br>
+<h3>Comentários:</h3>
+<div id="HCB_comment_box" style="text-align:center"><span style="cursor:pointer;" id="load-comments" onclick="this.innerHTML='Carregando...'">💬 Carregando comentários...</span></div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+
+<script type="text/javascript" id="hcb">
+   document.getElementById("load-comments").addEventListener('click', loadComments);
+   function loadComments() {
+      if (!window.hcb_user) {
+        hcb_user = {};
+      }(function() {
+        let s = document.createElement("script"),
+            l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+            h = "https://www.htmlcommentbox.com";
+        s.setAttribute("type", "text/javascript");
+        s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24noOeNoU2cppcTsbYgYRgn%2F" + "&opts=16798&num=10&ts=1734891859180");
+        if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+      })(); 
+   }
+   loadComments() // Carregar automaticamente
+</script>
+
+<br>
+<p class="color-weak mono-small">Powered by <a href="https://www.htmlcommentbox.com/">HTML Comment Box</a>.</p>
+<br>
+   <div class="prev-next"> <span><a href="../../index.html">[Home]</a></span> </div>
+</article>
+      </main>
+
+      <!-- side menu, projects, navigation, etc -->
+      <aside class="side-blocks">
+         
+      </aside>
+   </div>
+
+   <!-- site footer -->
+   <footer>
+      <i></i>
+   </footer>
+</div>
+</body>
+</html> 
