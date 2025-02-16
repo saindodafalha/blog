@@ -88,6 +88,14 @@
    .page figure {
       float: none!important;
    }
+
+   .page ul.posts-list {
+      padding:0;
+   }
+
+   .page ul.posts-list li {
+      font-size: 0.8em;
+   }
 }
 
 @media only screen and (max-width: 615px) {

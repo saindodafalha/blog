@@ -193,8 +193,6 @@ footer {
 }
 
 .page ul.posts-list li a {
-   display: flex;
-   flex-direction: row;
    margin: 4px;
    padding: 2px;
    text-decoration: none;

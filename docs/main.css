@@ -194,8 +194,6 @@ footer {
 }
 
 .page ul.posts-list li a {
-   display: flex;
-   flex-direction: row;
    margin: 4px;
    padding: 2px;
    text-decoration: none;
@@ -521,6 +519,14 @@ purple {color: purple;}
 
    .page figure {
       float: none!important;
+   }
+
+   .page ul.posts-list {
+      padding:0;
+   }
+
+   .page ul.posts-list li {
+      font-size: 0.8em;
    }
 }
 
