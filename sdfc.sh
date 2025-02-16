@@ -4,7 +4,7 @@
 ROOTDIR="$HOME/saindodafalha";
 WEBSITE_NAME='Saindo da Falha';
 WEBSITE_TAB='Saindo da Falha';
-WEBSITE_AUTOR='Saindo da Falha';
+WEBSITE_AUTOR='SDF';
 VERSION='';
 RAW_EDITOR='vim';
 
@@ -26,12 +26,12 @@ WEBSITE_PAGES="$WEBSITE_HOME/r";
 LAYOUT="$LAYDIR/layout.html";
 
 # configurações de RSS
-WEBSITE_URL_RSS='https://saindodafalha.neocities.org/home';
+WEBSITE_URL_RSS='https://saindodafalha.github.io/blog';
 RSS_TEMPLATE="$RSSDIR/rss.xml";
-RSS_DESC="RSS feed do SDF.";
+RSS_DESC="RSS feed do Saindo da Falha.";
 RSS_LIST="$VARDIR/rss-all.txt";
-RSS_LINK_BASE='https://saindodafalha.neocities.org/home/r/'
-RSS_ITEM_TEMPLATE='<item> <title>@TITLE@</title> <description>@DESC@</description> <link>@LINK@</link> <pubDate>@DATE@</pubDate> </item>';
+RSS_LINK_BASE='https://saindodafalha.github.io/blog/r/'
+RSS_ITEM_TEMPLATE='@RAW-DATE@ <item><title>@TITLE@</title><description>@DESC@</description><link>@LINK@</link><pubDate>@DATE@</pubDate></item>';
 
 # configurações de CSS
 CSS_TO_COMPILE='main.css html-comment-box.css mobile.css';
@@ -501,9 +501,10 @@ addRSSItem() { # --rss-template --rss-file --raw_index
    title="$(echo "$meta" | cut -d^ -f2)";
    desc='Atualização.';
    link="$link_base""$raw";
-   date="$(echo "$meta" | cut -d^ -f5)";
-   [[ "$date" == 'NEVER' ]] && date="$(echo "$meta" | cut -d^ -f3)";
-   date="$(date -d @$date)";
+   date="$(echo "$meta" | cut -d^ -f3)";
+   #[[ "$date" == 'NEVER' ]] && date="$(echo "$meta" | cut -d^ -f3)";
+   local raw_date="$date";
+   date="$(date '+%a, %d %b %Y %R:%S %z' -d @$date)";
    options="$(echo "$meta" | cut -d^ -f6)";
    # encerra se a opção i existir
    if grep 'no-rss' <<< "$options" &> /dev/null;
@@ -516,6 +517,7 @@ addRSSItem() { # --rss-template --rss-file --raw_index
    entry="${entry/@DESC@/"$desc"}";
    entry="${entry/@LINK@/"$link"}";
    entry="${entry/@DATE@/"$date"}";
+   entry="${entry/@RAW-DATE@/"$raw_date"}";
    # checa se já existe e se --force foi passado
    # se já existe, só recria com --force
    if ! grep "$link" "$var_rss_list" > /dev/null
@@ -534,8 +536,8 @@ addRSSItem() { # --rss-template --rss-file --raw_index
 rebuildRSS() { 
    # recompila o arquivo rss no site
    local rss_file="$(cat "$RSS_TEMPLATE")";
-   local rss_list="$(tac "$RSS_LIST" | sed '/^$/d')";
-   local last_build="$(date)";
+   local rss_list="$(cat "$RSS_LIST" | sort -n -r | sed -e 's/^[[:digit:]]* //g' -e '/^$/d')";
+   local last_build="$(date '+%a, %d %b %Y %R:%S %z')";
    # substituiçoes no template
    rss_file="${rss_file/@WEBSITE-NAME@/"$WEBSITE_NAME"}";
    rss_file="${rss_file/@WEBSITE-URL@/"$WEBSITE_URL_RSS"}";

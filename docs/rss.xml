@@ -2,10 +2,16 @@
 <rss version="2.0">
 <channel>
 <title>Saindo da Falha</title>
-<link>https://saindodafalha.neocities.org/home</link>
-<description>RSS feed do SDF.</description>
-<lastBuildDate>Tue Feb 11 09:49:15 PM -03 2025</lastBuildDate>
-<item> <title>Janeiro 2025</title> <description>Atualização.</description> <link>https://saindodafalha.neocities.org/home/r/1</link> <pubDate>Thu Jan 30 08:20:11 PM -03 2025</pubDate> </item>
-<item> <title>Fechamento 2024</title> <description>Atualização.</description> <link>https://saindodafalha.neocities.org/home/r/0</link> <pubDate>Fri Dec 27 11:00:24 PM -03 2024</pubDate> </item>
+<link>https://saindodafalha.github.io/blog</link>
+<description>RSS feed do Saindo da Falha.</description>
+<lastBuildDate>Sun, 16 Feb 2025 11:18:15 -0300</lastBuildDate>
+<item><title>Janeiro 2025</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/1</link><pubDate>Thu, 30 Jan 2025 20:20:11 -0300</pubDate></item>
+<item><title>A cagada mais cara que já fiz</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r5</link><pubDate>Thu, 16 Jan 2025 08:31:29 -0300</pubDate></item>
+<item><title>Autoavaliação física</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r4</link><pubDate>Wed, 15 Jan 2025 11:00:12 -0300</pubDate></item>
+<item><title>Fechamento 2024</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/0</link><pubDate>Fri, 27 Dec 2024 23:00:24 -0300</pubDate></item>
+<item><title>Analisando minhas metas para 2024</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r3</link><pubDate>Thu, 26 Dec 2024 22:01:08 -0300</pubDate></item>
+<item><title>Minha vida é uma bosta, mas meu rice está bonitão</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r2</link><pubDate>Tue, 17 Dec 2024 17:26:43 -0300</pubDate></item>
+<item><title>Um bitcoin = 100 mil dólares</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r1</link><pubDate>Thu, 05 Dec 2024 08:32:36 -0300</pubDate></item>
+<item><title>Retorno</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r0</link><pubDate>Thu, 28 Nov 2024 11:10:04 -0300</pubDate></item>
 </channel>
 </rss>

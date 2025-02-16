@@ -8,5 +8,5 @@ Arquivo do blog antigo: ;url "https://github.com/saindodafalha/saindodafalha-old
 ;br
 Por hora é só.
 <!--ARTICLE-IS-SIGNED--> 
-<!--^Retorno^1732803004^🌄^NEVER^no-rss^4c59db6291741fca02683960684daba1689b9e7088a03080954e9c9c17d86068^no-nice-date^blog^-->
-<!--^Retorno^1732803004^🌄^1733747354^no-rss^0c28db8e5107ac357abe8a900721b5900e27ef0b1fa2915994de0ac26127aecf^no-nice-date^blog^-->
+<!--^Retorno^1732803004^🌄^NEVER^defaults^4c59db6291741fca02683960684daba1689b9e7088a03080954e9c9c17d86068^no-nice-date^blog^-->
+<!--^Retorno^1732803004^🌄^1733747354^defaults^0c28db8e5107ac357abe8a900721b5900e27ef0b1fa2915994de0ac26127aecf^no-nice-date^blog^-->

@@ -1,4 +1,4 @@
-Cumpri as minhas ;url "https://saindodafalha.neocities.org/old/posts/1/" "metas" para este ano?
+Cumpri as minhas metas para este ano?
 ;^ul
 ;li ✅ Começar um EAD
 ;li ✅ Tirar CNH
@@ -44,4 +44,5 @@ Não só isso, do meio do ano para cá eu desenvolvi um derrotismo enorme. Estou
 ;br
 Amigos, eu estou na merda.
 <!--ARTICLE-IS-SIGNED--> 
-<!--^Analisando minhas metas para 2024^1735261268^📈^NEVER^no-rss^d5cc7dc82ad4f3cd7792c9a230beb8199768cf49f6c804071df7aebfd5c627cc^ <div>Saindo da Falha<br> Bloco 876515 (26/12/2024 22:01 quinta-feira) (☀️ 25°C Limpo) 1₿ valia $95677, Network fee: 5sat/vB.</div>^metas fracasso^-->
+<!--^Analisando minhas metas para 2024^1735261268^📈^NEVER^defaults^d5cc7dc82ad4f3cd7792c9a230beb8199768cf49f6c804071df7aebfd5c627cc^ <div>Saindo da Falha<br> Bloco 876515 (26/12/2024 22:01 quinta-feira) (☀️ 25°C Limpo) 1₿ valia $95677, Network fee: 5sat/vB.</div>^metas fracasso^-->
+<!--^Analisando minhas metas para 2024^1735261268^📈^1739666219^defaults^7d8ba79ffad8706c6a7a603892a3c8081cc4dd1aee878ec5279beca14d3ee3d1^ <div>Saindo da Falha<br> Bloco 876515 (26/12/2024 22:01 quinta-feira) (☀️ 25°C Limpo) 1₿ valia $95677, Network fee: 5sat/vB.</div>^metas fracasso^-->
