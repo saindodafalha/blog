@@ -14,7 +14,7 @@ body {
 }
 
 .website-container {
-   width: 85%;
+   width: 70%;
    font-family: var(--font-wc);
    color: var(--fg-wc);
    background: var(--bg-wc);
@@ -26,6 +26,7 @@ body {
    margin: var(--margin-block);
    background: var(--bg-bg-img-banner);
    margin-bottom: 0!important;
+   display: none; /**/
 }
 
 .banner-container a {
@@ -68,12 +69,11 @@ body {
    margin-top: 0!important;
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: start;
 }
 
 .top-nav .nav-section {
-   display: inline-block;
-
+  #foo
 }
 
 .top-nav .nav-section .nav-link {
@@ -81,6 +81,10 @@ body {
    margin-left: 10px;
    color: var(--fg-nav);
    text-decoration: none;
+}
+
+.top-nav .mini-logo .nav-link {
+  font-family: monospace;
 }
 
 /* Blocos */
@@ -125,6 +129,7 @@ footer {
    margin: var(--margin-footer);
    padding: 2em;
    text-align: center;
+   display:none; /**/
 }
 
 /* Pages Contents */
@@ -189,13 +194,15 @@ footer {
    text-decoration: none;
 }
 
+.page ul.posts-list  {
+   text-decoration: none;
+}
+
 .page ul.posts-list li {
    list-style: none;
 }
 
 .page ul.posts-list li a {
-   margin: 4px;
-   padding: 2px;
    text-decoration: none;
    font-weight: bold;
    color: var(--fg-block);
@@ -369,6 +376,10 @@ mono, .mono {
   margin: 0 10px;
 }
 
+.no-disc {
+   list-style: none;
+}
+
 orange {color: orange;}
 blue   {color: blue;}
 yellow {color: yellow;}
@@ -429,6 +440,21 @@ purple {color: purple;}
 #hcb_form_name, #hcb_form_content {
    background: var(--bg-code)!important;
    color: var(--fg-code)!important;
+   font-family: monospace!important;
+   border: 1px darkgray solid!important;
+   border-radius: 0!important;
+}
+
+#hcb_form_name:focus, #hcb_form_content:focus {
+   outline: none!important;
+}
+
+#hcb_submit, .btn {
+  background: transparent!important;
+   color: var(--fg-code)!important;
+   font-family: monospace!important;
+   font-size: 1em!important;
+   border: none!important;
 }
 @media only screen and (max-width: 1280px) {
 
@@ -502,7 +528,7 @@ purple {color: purple;}
 @media only screen and (max-width: 730px) {
    
    .top-nav {
-      font-size: 0.75em;
+      font-size: 0.9em;
    }
 
    .banner .site-name {
@@ -528,10 +554,14 @@ purple {color: purple;}
    .page ul.posts-list li {
       font-size: 0.8em;
    }
+  
 }
 
 @media only screen and (max-width: 615px) {
 
+   .banner-container {display:block}
+   .mini-logo {display:none}
+   .top-nav {justify-content: center}
    .banner .site-name {
       font-size: 3em;
    }

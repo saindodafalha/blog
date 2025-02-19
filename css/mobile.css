@@ -70,7 +70,7 @@
 @media only screen and (max-width: 730px) {
    
    .top-nav {
-      font-size: 0.75em;
+      font-size: 0.9em;
    }
 
    .banner .site-name {
@@ -96,10 +96,14 @@
    .page ul.posts-list li {
       font-size: 0.8em;
    }
+  
 }
 
 @media only screen and (max-width: 615px) {
 
+   .banner-container {display:block}
+   .mini-logo {display:none}
+   .top-nav {justify-content: center}
    .banner .site-name {
       font-size: 3em;
    }

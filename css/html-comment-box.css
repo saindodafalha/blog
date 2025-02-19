@@ -46,4 +46,20 @@
 #hcb_form_name, #hcb_form_content {
    background: var(--bg-code)!important;
    color: var(--fg-code)!important;
+   font-family: monospace!important;
+   border: 1px darkgray solid!important;
+   border-radius: 0!important;
 }
+
+#hcb_form_name:focus, #hcb_form_content:focus {
+   outline: none!important;
+}
+
+#hcb_submit, .btn {
+  background: transparent!important;
+   color: var(--fg-code)!important;
+   font-family: monospace!important;
+   font-size: 1em!important;
+   border: none!important;
+}
+

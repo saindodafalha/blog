@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # CONFIGURAÇÕES
-ROOTDIR="$HOME/saindodafalha";
+ROOTDIR="$HOME/blog";
 WEBSITE_NAME='Saindo da Falha';
 WEBSITE_TAB='Saindo da Falha';
-WEBSITE_AUTOR='SDF';
+WEBSITE_AUTOR='Saindo da Falha';
 VERSION='';
 RAW_EDITOR='vim';
 
@@ -35,7 +35,7 @@ RSS_ITEM_TEMPLATE='@RAW-DATE@ <item><title>@TITLE@</title><description>@DESC@</d
 
 # configurações de CSS
 CSS_TO_COMPILE='main.css html-comment-box.css mobile.css';
-CSS_ROOT_THEME='root.css';
+CSS_ROOT_THEME='root-minimal.css';
 
 
 # FUNÇÕES
@@ -365,7 +365,7 @@ preparePage() {
    if [[ "$nicedate" == 'no-nice-date' ]]
    then
       local date="$(date -d @"$timestamp" '+%A, %d/%m/%Y %H:%M')";
-      local address="$WEBSITE_AUTOR<br>$date";
+      local address="$WEBSITE_AUTOR, $date";
    else
       local address="$nicedate";
    fi
@@ -694,14 +694,14 @@ genTagMenu() {
       done
     tagget_posts="$(echo -e "$tagged_posts" | sort -n -k 2)";
     tag_index_itens="$tag_index_itens\n${tag} ($tag_count)";
-    output="$output<h3 id='tag-$tag'>$tag ($tag_count)</h3>\n<ul>";
+    output="$output<h3 id='tag-$tag'>$tag ($tag_count)</h3>\n<ul class='posts-list'>";
     output="$output$tagged_posts";
     output="$output\n</ul><br>\n";
   done
   local signature="<!--ARTICLE-IS-SIGNED-->\n<!--^Tags^1738682103^🏷^NEVER^hidden no-rss no-comments unlisted^e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855^ <div>Saindo da Falha<br> Bloco 882294 (04/02/2025 12:15 terça-feira) (☀ 32°C Ensolarado) 1₿ valia $99320, Network fee: 4sat/vB.</div>^none^-->";
   
   # index
-  local tag_index='Lista de tags: <ul class="mono">';
+  local tag_index='Lista de tags: <ul class="mono posts-list">';
   oifs=$IFS;
   IFS=$'\n';
   for tag_link in $(echo -e "$tag_index_itens")

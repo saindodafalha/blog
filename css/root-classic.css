@@ -5,8 +5,8 @@
 
    /* website container */
    --bg-wc: transparent;
-   --fg-wc: #ddd;
-   --font-wc: arial;
+   --fg-wc: #A0A0A0;
+   --font-wc: Verdana, sans-serif;
 
    /* banner  */
    --bg-banner: #151515;
@@ -22,19 +22,19 @@
    --height-banner: 300px;
 
    /* nav */
-   --bg-nav: transparent;
+   --bg-nav: #151515;
    --fg-nav: var(--fg-wc);
    --font-nav: Verdana, sans-serif;
 
    /* block */
-   --bg-block: transparent;
+   --bg-block: #151515;
    --fg-block: var(--fg-wc);
-   --fg-block-weak: #888;
-   --fg-block-strong: #fff;
-   --font-block: arial;
+   --fg-block-weak: #919991;
+   --fg-block-strong: #E1E9E1;
+   --font-block: Verdana, sans-serif;
    --font-size-block: 1.1em;
    --margin-block: .7em;
-   --box-shadow-block: ;
+   --box-shadow-block: 0 4px 0 #222;
    --padding-block: 1.2em;
    --main-block-width: 100%;
    --side-blocks-width: calc(100% - var(--main-block-width));
