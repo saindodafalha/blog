@@ -236,7 +236,7 @@ footer {
    padding: 5px;
    text-align: right;
    font-family: monospace;
-   font-size: 1.2em;
+   font-size: 1.1em;
 }
 
 .page table th {
@@ -394,6 +394,7 @@ purple {color: purple;}
 }
 #HCB_comment_box {
    margin: 0;
+   font-family: arial!important;
 }
 
 .comment, #HCB_comment_form_box {	
@@ -401,7 +402,7 @@ purple {color: purple;}
 }
 
 #HCB_comment_box .comment {	
-   margin-bottom: 0.5em!important;
+   margin-bottom: 1.1em!important;
 }
 
 #HCB_comment_form_box {	
@@ -409,13 +410,26 @@ purple {color: purple;}
 }
 
 #HCB_comment_box blockquote {
-   border-width: 1px!important;
+   border: none!important;
    font-style: normal;
+   margin-bottom: 0!important;
+   padding-bottom: 5px!important;
 }
 
-.hcb-like, .hcb-reply, .hcb-flag {
-   color: var(--fg-block-weak)!important;
+.hcb-like, .hcb-flag {
+   display: none;
 }
+
+.hcb-reply, .hcb-reply:hover, .hcb-reply:focus {
+   color: var(--fg-block-weak)!important;
+   visibility: hidden!important;
+} 
+
+.hcb-reply::before {
+   content: '💬 Reply';
+   visibility: visible;
+   padding-left: 12px;
+} 
 
 #HCB_comment_box .author-name::before {
    content: '🕵️ ';
@@ -455,6 +469,16 @@ purple {color: purple;}
    font-family: monospace!important;
    font-size: 1em!important;
    border: none!important;
+}
+
+#HCB_comment_box [id^="replies_"] .comment {
+   margin-left: 40px!important;
+   margin-bottom: 0.4em!important;
+   margin-top: 0.1em!important;
+}
+
+.hcb-comment-body {
+  margin-left: 10px!important;
 }
 @media only screen and (max-width: 1280px) {
 
