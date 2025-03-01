@@ -23,7 +23,7 @@
 
    <!-- top nav -->
    <nav class="block top-nav">   
-         <span class="nav-section mini-logo" style="visibility: visible"> <a class="nav-link" href="../../index.html">Saindo da Falha</a> </span> <span class="nav-section"> <a class="nav-link" href="../../index.html">🏡Home</a> <a class="nav-link" href="../../rss.xml" target="_blank">📢RSS</a> <!--<a class="nav-link" href="../../index.html#contact">[Contato]</a> --> <a class="nav-link" href="../../r/chat/index.html">💬Chat</a> <!--- <a class="nav-link" href="mailto:sdf_box@proton.me">📪E-mail</a> --> <!-- <a class="nav-link" href="../../r/journal/index.html">📰Journal</a> --> </span> <!-- <span class="nav-section" style="cursor: pointer; visibility: hidden"> <span id="toggle-light-dark-theme"> <span onclick="lightTheme()">☀️</span> </span> </span> ---> <!-- js - dark light themes -------------------------------------------------------------------------- <script> function lightTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'files/root-light.css'); localStorage.setItem('sdf-theme', 'light'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="defaultTheme()" >🌒</span>'; } function defaultTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'root.css'); localStorage.setItem('sdf-theme', 'default'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="lightTheme()" >☀️</span>'; } if (localStorage.getItem('sdf-theme')) { if (localStorage.getItem('sdf-theme') == 'light') {lightTheme()}; } </script> -->
+         <span class="nav-section mini-logo" style="visibility: visible"> <span class="nav-link" style="cursor: default">Minha vida é uma bosta, mas meu rice está bonitão</span> </span> <span class="nav-section"> <a class="nav-link" href="../../index.html">🏡Home</a> <a class="nav-link" href="../../rss.xml" target="_blank">📢RSS</a> <!--<a class="nav-link" href="../../index.html#contact">[Contato]</a> --> <a class="nav-link" href="../../r/chat/index.html">💬Chat</a> <span class="nav-link" id="toggle-light-dark-theme"> <span onclick="lightTheme()">☀️Light</span> </span> <!--- <a class="nav-link" href="mailto:sdf_box@proton.me">📪E-mail</a> --> <!-- <a class="nav-link" href="../../r/journal/index.html">📰Journal</a> --> </span> <script> function lightTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'files/root-minimal-light.css'); localStorage.setItem('sdf-theme', 'minimal-light'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="defaultTheme()">🌒Dark</span>'; } function defaultTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'root.css'); localStorage.setItem('sdf-theme', 'default'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="lightTheme()">☀️Light</span>'; } if (localStorage.getItem('sdf-theme') == 'minimal-light') {lightTheme()}; </script>
    </nav>
 
    <!-- main page container-->
@@ -33,7 +33,7 @@
       <main class="block main-block">
          
 <article class="page">
-   <h1>Minha vida é uma bosta, mas meu rice está bonitão</h1>
+   <h1 id="post-title">Minha vida é uma bosta, mas meu rice está bonitão</h1>
    <br id="page-hr-separator-top">
    <p>Nada a ver com o assunto principal do blog, mas eu estava para formatar meu computador, como gosto de fazer de tempos em tempos, quando me veio a ideia de que eu deveria "arroizar" meu ambiente desta vez.</p>
 <br>
@@ -193,8 +193,7 @@
    <span id="page-tags">Tags: <a href='../tags/index.html#tag-linux'>linux</a> 
 <a href='../tags/index.html#tag-ricing'>ricing</a> </span>
    <hr id="page-hr-separator-bottom">
-   <br>
-<h3>Comentários:</h3>
+   <h3>Comentários:</h3>
 <div id="HCB_comment_box" style="text-align:center"><span style="cursor:pointer;" id="load-comments" onclick="this.innerHTML='Carregando...'">💬 Carregando comentários...</span></div>
 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
 
@@ -218,7 +217,7 @@
 <br>
 <p class="color-weak mono-small">Powered by <a href="https://www.htmlcommentbox.com/">HTML Comment Box</a>.</p>
 <br>
-   <div class="prev-next"> <span><a href="../../index.html">[Home]</a></span> </div>
+   <div class="prev-next"> <span><a href="../../index.html">🏡Home</a></span> </div>
 </article>
       </main>
 

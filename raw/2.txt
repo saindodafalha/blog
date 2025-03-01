@@ -1,0 +1,97 @@
+Porra, só percebi que era o último dia do mês agora.
+Enfim, apertem os sintos porque estamos derretendo!
+;br
+
+;H Fechamento Financeiro
+;br
+
+;img "hueston.jpeg" "300px"
+;br;br
+
+Queda feíssima do Bitcoin. Vendi? Não. Estou com medo? Sim.
+;br
+Pode muito bem ser apenas uma correção no meio da alta, mas sempre dá aquele receio, aquela paranóia de pensar que talvez 110k tenha sido o topo do ciclo, afinal o ciclo está fraco.
+;br
+Mas eu não vou fazer nada por medo ou cagaço, vou segurar e seguir o plano.  
+;br
+
+Aposto que isso é culpa daquele boomer comunista memeconheiro do Trump e suas tarifas retardadas. Talvez seja em parte culta do hacking da Bybit, aquele gordinho norte coreano arrombado.
+;br
+
+<mono>Variação.:  <loss>-11277.77 (-16.88%)</loss></mono>
+<mono>Neste ano:  <loss>-11093.57 (-16.65%)</loss></mono>
+;br
+
+;^table
+;^tr
+;;<th>Mês</th>
+;;<th>Total (R$)</th>
+;;<th>Dif. (R$)</th>
+;;<th>Dif. (%)</th>
+;$tr
+;^tr
+;td 2024
+;td 66'608.00
+;td 7508.03
+;td 12.70
+;$tr
+;^tr
+;td JAN/2025
+;td 66'792.20
+;td 184.20
+;td &nbsp;0.27
+;$tr
+;^tr
+;td FEV/2025
+;td 55'514.43 
+;tdred -11'277.77
+;tdred -16.88% 
+;$tr
+;$table
+;br
+
+;h Alocação
+;pie "orange 0% 88.87%, blue 88.87% 96.67%, yellow 96.67% 99.37%, purple 99.37% 100%"
+<mono><orange>▇</orange> Bitcoin: 88.87%</mono>
+<mono><blue>▇</blue>     Bancos.: &nbsp;7.80%</mono>
+<mono><yellow>▇</yellow> Cash...: &nbsp;2.70%</mono>
+<mono><purple>▇</purple> Críptos: &nbsp;0.61%</mono>
+;br
+;br
+
+;h Gastos no mês: <expenses>R$ 621.00</expenses>
+Gastei demais novamente. Comprei um capacete meio caro, mas pelo visto, não comprarei a moto. Porra.
+É, eu estava pensando em comprar minha primeira moto, mas o mercado resolveu ir pro caralho e estragar a minha alegria - de pobre que dura pouco.
+Eu deveria ter começado a vender em 100k, mas fui ganancioso. Agora estou arrependido e com o cu trancado. 
+;br
+
+;H Sonhei hoje que o Bitcoin bateu 20k
+É isso, por fora eu tento ficar relaxado, calmo, dar risada da situação, mas hoje eu até tive um pesadelo com essa porra. No meu sonho o Bitcoin havia subido para 97k e depois despencado para 40k e por fim 20k.
+;br
+;img "pink-wojak-wakes-up.jpg" "300px"
+;br;br
+
+Acordei assustado, fui olhar o preço e estava igual ontem. 
+;br
+
+O que dizer dessa porra? Medo dá, mas fazer o quê? Eu confio que é só uma correção, eu confio que vai chega a pelo menos 150k. Quem sou eu? Um economista? Não, um fracassado burro. Talvez eu esteja errado. Ah, foda-se. Vou seguir o plano. Vai dar certo. Vai dar certo esse caralho. Se não der eu pulo da ponte.
+;br
+
+;H <i>Mil venderão ao teu lado, dez mil a tua direita: mas tu não estarás vendido.</i>
+Não vou vender. Não vou vender. Jamais vou vender. Pode cair, caia. 
+;br
+
+Falo assim, mas o medo bateu tão forte hoje mais cedo que fiz até uma promessa para Deus. 
+Prometi que se voltar aos 100k eu irei doar 500 reais em Bitcoin para alguma instituição cristã que aceite doações em Bitcoin, e se chegar a 150k eu doarei mil reais. Sim, sei que é pouco. Sou mão de vaca.
+;br
+
+Enfim, é isso. Escrevi este post às pressas porque eu nem lembrava que hoje era o último dia do mês e amanhã não dá pra postar.
+;br
+
+Não se desesperem, bitbros. Não façam nada por desespero. We all gonna make it.
+;br
+
+<img class="auto-hide-image" src="../../files/fit-pinky.png" style="position:fixed; bottom:0; left:0; width:300px">
+
+<!--ARTICLE-IS-SIGNED--> 
+<!--^Fevereiro 2025^1740788547^📊^NEVER^defaults^3618cbb92e9e30abec680d7b3f44eea8ac98b8852647c9afde49398fe13491a5^ <div>Saindo da Falha<br> Bloco 885783 (28/02/2025 21:22 sexta-feira) (⛅️ 25°C Céu com nuvens) 1₿ valia $84429, Network fee: 8sat/vB.</div>^fechamento pobreza bearmarket medo^-->

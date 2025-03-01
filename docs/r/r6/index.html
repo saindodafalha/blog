@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDF: Manual de GPG para falhos: verificando downloads</title>
+<link rel="stylesheet" href="../../root.css" id="css-root-theme" data="../../"> 
+<link rel="stylesheet" href="../../main.css"> 
+<link rel="icon" type="image/x-icon" href="../../files/favicon.ico">
+</head>
+<body>
+<div class="website-container">
+
+   <!-- header -->
+   <header class="banner-container">
+      <a href="../../index.html">
+         <div class="banner">
+            <h1 class="site-name">Saindo da Falha</h1>
+            <h2 class="motd"></h2>
+         
+         </div>
+      </a>
+   </header>
+
+   <!-- top nav -->
+   <nav class="block top-nav">   
+         <span class="nav-section mini-logo" style="visibility: visible"> <span class="nav-link" style="cursor: default">Manual de GPG para falhos: verificando downloads</span> </span> <span class="nav-section"> <a class="nav-link" href="../../index.html">🏡Home</a> <a class="nav-link" href="../../rss.xml" target="_blank">📢RSS</a> <!--<a class="nav-link" href="../../index.html#contact">[Contato]</a> --> <a class="nav-link" href="../../r/chat/index.html">💬Chat</a> <span class="nav-link" id="toggle-light-dark-theme"> <span onclick="lightTheme()">☀️Light</span> </span> <!--- <a class="nav-link" href="mailto:sdf_box@proton.me">📪E-mail</a> --> <!-- <a class="nav-link" href="../../r/journal/index.html">📰Journal</a> --> </span> <script> function lightTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'files/root-minimal-light.css'); localStorage.setItem('sdf-theme', 'minimal-light'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="defaultTheme()">🌒Dark</span>'; } function defaultTheme() { const fileDirBase = document.getElementById('css-root-theme').getAttribute('data'); document.getElementById('css-root-theme').setAttribute('href', fileDirBase + 'root.css'); localStorage.setItem('sdf-theme', 'default'); document.getElementById('toggle-light-dark-theme').innerHTML = '<span onclick="lightTheme()">☀️Light</span>'; } if (localStorage.getItem('sdf-theme') == 'minimal-light') {lightTheme()}; </script>
+   </nav>
+
+   <!-- main page container-->
+   <div class="blocks-container">
+      
+      <!-- main page, posts, content, etc -->
+      <main class="block main-block">
+         
+<article class="page">
+   <h1 id="post-title">Manual de GPG para falhos: verificando downloads</h1>
+   <br id="page-hr-separator-top">
+   <p>Quero fazer umas postagens sobre autocustódia de Bitcoin no futuro, mas saber como verficar arquivos com GPG é um pré-requisito e por isso escrevi esta explicação simples e introdutória sobre GPG. Vou explicar aqui apenas o mínimo que você precisa saber.</p>
+<br>
+<h2>Criptografia Assimétrica</h2>
+<p>GPG ou GnuPG é uma ferramenta de criptografia simétrica e assimétrica. O que interessa para nós é a assimétrica. Que porra é isso?</p>
+<p>Diferente da criptografia simétrica, que se usa uma senha para criptografar dados, a assimétrica usa duas chaves, a chave privada ou secreta e a chave pública. Vou me referir a elas como <mono>🔑Secret Key</mono> (ou <i>private key</i>) e <mono>🔓Public Key</mono> a partir de agora.</p>
+<br>
+<p>Não vou me aprofundar, mas os conceitos principais que você tem que entender são:</p>
+<ol>
+<li>A <mono>🔑Secret Key</mono> é criada aleatoriamente e a <mono>🔓Public Key</mono> é gerada a partir da <mono>🔑Secret Key</mono>.</li>
+<li>Como dito no item 1, você pode descobrir qual é a <mono>🔓Public Key</mono> se tiver a <mono>🔑Secret Key</mono>.</li>
+<li>Você NÃO pode descobrir a <mono>🔑Secret Key</mono> a partir da <mono>🔓Public Key</mono>.</li>
+<li>A <mono>🔓Public Key</mono> é pública e você mostra para todo mundo, estampa na camiseta, faz uma tatuagem, etc...</li>
+<li>A <mono>🔑Secret Key</mono> é SECRETA, PRIVADA, e se você deixar vazar você se lascou.</li>
+</ol>
+<h3>E o mais importante: </h3>
+<p>1. Uma mensagem* encriptada pela <mono>🔓Public Key</mono> só pode ser decriptada pela <mono>🔑Secret Key</mono> associada.</p>
+<p>2. Uma mensagem* encriptada pela <mono>🔑Secret Key</mono> só pode ser decriptada pela <mono>🔓Public Key</mono> associada.</p>
+<p>*= entenda <i>mensagem</i> como dado, informação, arquivo, etc...</p>
+<br>
+<h2>Usos do GPG</h2>
+<p>Você pode usar GPG para basicamente duas coisas:</p>
+<ol>
+<li>Encriptar mensagens usando a <mono>🔓Public Key</mono> do destinatário, ele usará a <mono>🔑Secret Key</mono> dele para decriptar.</li>
+<li>Encriptar mensagens usando sua própria <mono>🔑Secret Key</mono>, de forma que qualquer um que tenha sua <mono>🔓Public Key</mono> possa decriptar.</li>
+</ol> 
+<p>Leia novamente o item 2 e pense sobre isso. Se todos conhecem minha <mono>🔓Public Key</mono>, todos podem decriptar uma mensagem assinada pela minha <mono>🔑Secret Key</mono>. </p>
+<p>Qual é a utilidade de encriptar uma mensagem que todos podem decriptar?</p>
+<p>É útil porque se eles conseguem decriptar a mensagem com sua <mono>🔓Public Key</mono>, então ela, a mensagem, com certeza foi encriptada com sua <mono>🔑Secret Key</mono>.</p>
+<p>Ou seja, você pode usar essa característica para assinar uma mensagem, gerar uma assinatura digital.</p>
+<br>
+<h3>O que é assinar uma mensagem?</h3>
+<p>Assinar uma mensagem é encriptá-la com sua <mono>🔑Secret Key</mono> de forma que somente quem tem sua <mono>🔓Public Key</mono> possa decriptá-la. </p>
+<p>Isso é uma simplificação, mas é uma boa forma de entender.</p>
+<br>
+<p>E por que é útil? </p>
+<p>Porque isso serve como uma <mono>🔏assinatura</mono>. Quem recebeu a mensagem terá a CERTEZA matemática de que aquela mensagem foi assinada com sua <mono>🔑Secret Key</mono> e que ela veio de você - a não ser que você tenha cagado no pau de deixado a <mono>🔑Secret Key</mono> vazar.</p>
+<br>
+<p>Nesse contexto, faria sentido chamar a <mono>🔑Secret Key</mono> de <mono>🔑Signing Key</mono> e a <mono>🔓Public Key</mono> de <mono>🔓Verifying Key</mono>. Chave de assinatura e de verificação. Mas vou continuar com o nome mais padrão.</p>
+<br>
+<h3>E o que acontece se eu deixar vazar a <mono>🔑Secret Key</mono>?</h3>
+<ol>
+<li>Qualquer um com sua <mono>🔑Secret Key</mono> que tiver acesso a mensagens enviadas para você (encriptadas na sua <mono>🔓Public Key</mono>) poderá ler todas essas mensagens.</li>
+<li>Qualquer um com sua <mono>🔑Secret Key</mono> poderá assinar mensagens e se passar por você.</li>
+</ol>
+<p>É assim que criptografia assimétrica funciona. Se ficou confuso, peço que leia novamente. É mais simples do que parece.</p>
+<br>
+<h2>Como verificar mensagens com GPG</h2>
+<p>Em outras palavras, como checar se o software que baixei tem autenticidade e integridade.</p>
+<ol>
+<li>Autenticidade: se foi assinado com uma <mono>🔑Secret Key</mono> que confio.</li>
+<li>Integridade: se não foi alterado no meio do caminho.</li>
+</ol>
+<br>
+<p>Se você não estiver usando Linux, pesquise na internet como usar o GPG no seu sistema operacional. Mas se você realmente quiser fazer autocustódia, use Linux. Windows é muito menos seguro.</p>
+<p>Não somente leia, faça você mesmo os passos e pratique para aprender como funciona.</p>
+<br>
+<p>Para fins de exemplo, nós vamos baixar e verificar o Tor Browser.</p>
+<p>Os passos são:</p>
+<ol>
+<li>Baixe o software.</li>
+<li>Baixe a <mono>🔏assinatura</mono>.</li>
+<li>Baixe e importe a <mono>🔓Public Key</mono> do signatário do software.</li>
+<li>Verifique em VÁRIOS lugares se a <mono>🔓Public Key</mono> é mesmo confiável, checando o <mono>fingerprint</mono>.</li>
+<li>Verifique a integridade e a autenticidade do arquivo baixado usando GPG.</li>
+</ol>
+<br>
+<h3>1. Baixe o software</h3>
+<p>Vá até o site do Tor, em <a target="_blank" href="https://www.torproject.org">https://www.torproject.org</a> e baixe. Escolhi a versão para Linux. </p>
+<br>
+<h3>2. Baixe a <mono>🔏assinatura</mono></h3>
+<p>Procure no site por checksums, signatures, ou algo assim. No caso do Tor, você encontra <i>Signature</i> abaixo do link de download.</p>
+<br>
+<div class="code">
+<p>$ ls</p>
+<p>tor-browser-linux-x86_64-14.0.6.tar.xz</p>
+<p>tor-browser-linux-x86_64-14.0.6.tar.xz.asc</p>
+</div>
+<br>
+<p>Geralmente a <mono>🔏assinatura</mono> terá o mesmo nome do arquivo, mas com um .asc no final.</p>
+<p>Uma <mono>🔏assinatura</mono> pode estar em binário, mas geralmente será um arquivo em texto mesmo e você pode lê-lo:</p>
+<br>
+<div class="code">
+<p>$ cat tor-browser-linux-x86_64-14.0.6.tar.xz.asc</p>
+<p>-----BEGIN PGP SIGNATURE-----</p>
+<p>iQIzBAABCgAdFiEEyq5AiuviKI6W/F1eFXQyz3imVykFAmemQBoACgkQFXQyz3im</p>
+<p>VymtIRAAmWa4evWPVsCOjmhRIxQKsUxLBXjcUrOQkGKWIDfLadSsKaiEQjcF3d6d</p>
+<p>dVTWLE7HNmcEbcEczdTGrTAPGccoIBPIHVN1Rk5ij+Ov5xyzBReEto3xTeyEAP25</p>
+<p>057jITJR8gHNKnW/1eza+oAvPUOrjD3zTxyD7dTn7NjLaL9HIUNLUy+/2CaH1M1L</p>
+<p>xzeNE9MSVP6R8SkEHdQmYbB7CITjthQo3v6owHN7lVn2nx4a3Kg2rbRMDfYqlXOa</p>
+<p>Oo+JL8qiN7lHbvvCgSpmTvWsuIRYhYiG8BGttFi3wYOPYQe5ZSRMBp9c+4uTZo9D</p>
+<p>JUV8tLPbMic2r0fNL4wQhxR1Jp5P9R0dqf5XsZ+NTo6Ip/cjer2CXKDIff0JnG7T</p>
+<p>sO2Ccc6PEcR20vDwotcKcH/HIeyfIuQoqBYwamm+eepYP4rRN+56rknqalPLnWu0</p>
+<p>gNMKuw63azuGkyiEEdl4ZAvJpm7z+64Bht/dZPMJ4KplyMytahJokH2kFilvCsKh</p>
+<p>6gQbP6Xsh1B1zfyNGCjXMhfx8ciAjul7ocV1S67tt0rfSonWuJUp/h/QdpVoJjOi</p>
+<p>d3Vn0az+R6r02qfLflHPxYQKzcpp8Do62b26EZQGScI3/0SFtFm40neXi7zNe2gQ</p>
+<p>wohJg7PjntB2nClQPbuWPVBf74t8kH7iDe9El6GhQzv2CSFQ85o=</p>
+<p>=q3ol</p>
+<p>-----END PGP SIGNATURE-----</p>
+</div>
+<br>
+<p>Há um cabeçalho informando que é uma <mono>🔏assinatura</mono> PGP. PGP é o protocolo, GPG é a implementação que estamos usando. Não se preocupe com isso agora. Esse monte de texto é a <mono>🔏assinatura</mono> em si.</p>
+<br>
+<p>Temos o arquivo e a <mono>🔏assinatura</mono> .asc, mas não podemos verificar porque falta a <mono>🔓Public Key</mono> do signatário.</p>
+<br>
+<h3>3. Baixe e importe a <mono>🔓Public Key</mono> do signatário do software</h3>
+<p>Geralmente você não irá encontrar a <mono>🔓Public Key</mono> no mesmo site onde baixou os outros arquivos. Por quê? Por segurança. Se alguém hackear o site poderá facilmente trocar a <mono>🔓Public Key</mono> e fazer uma fraude. </p>
+<br>
+<p>Por isso se deixa a <mono>🔓Public Key</mono> em outro lugar e por isso você pesquisa sobre a <mono>fingerprint</mono> da <mono>🔓Public Key</mono> antes de confiar nela - mais sobre isso abaixo. Você pode encontrar um link para a <mono>🔓Public Key</mono> ou às vezes nem isso e terá que pesquisar. </p>
+<br>
+<p>No caso do exemplo, abaixando a página, você encontra um link: <i>How can I verify Tor Browser signature?</i> e entrando nessa página eles te explicam como baixar a <mono>🔓Public Key</mono> para fazer a verificação. </p>
+<br>
+<p>Abaixo na mesma página, na seção <i>Workaround (using a public key)</i> eles dão o link para a <mono>🔓Public Key</mono>: <a target="_blank" href="https://keys.openpgp.org/vks/v1/by-fingerprint/EF6E286DDA85EA2A4BA7DE684E2C6E8793298290">https://keys.openpgp.org/vks/v1/by-fingerprint/EF6E286DDA85EA2A4BA7DE684E2C6E8793298290</a>. O openpgp.org é um keyserver. Não vou entrar no mérito de keyservers, mas são repositórios de <mono>🔓Public Keys</mono> na internet, você coloca sua <mono>🔓Public Key</mono> lá para as pessoas usarem.</p>
+<br>
+<div class="code">
+<p>$ ls</p>
+<p>EF6E286DDA85EA2A4BA7DE684E2C6E8793298290.asc</p>
+<p>tor-browser-linux-x86_64-14.0.6.tar.xz</p>
+<p>tor-browser-linux-x86_64-14.0.6.tar.xz.asc</p>
+</div>
+<br>
+<p>A chave pública também é geralmente um arquivo .asc que pode ser lido:</p>
+<br>
+<div class="code">
+<p>$ head EF6E286DDA85EA2A4BA7DE684E2C6E8793298290.asc</p>
+<p>-----BEGIN PGP PUBLIC KEY BLOCK-----</p>
+<p>Comment: EF6E 286D DA85 EA2A 4BA7  DE68 4E2C 6E87 9329 8290</p>
+<p>Comment: Tor Browser Developers (signing key) <torbrowser@torpro</p>
+<p>xsFNBFSOr7oBEADQMs+Q5cAshRhj3YkKgCBKyrjFWMZqVhlf9Y3ePtFQ9kFEnYIS</p>
+<p>G9rzMhFC6KMXPn9bgg6OBPPUnnJ29UsKvAk+qa8F35R+s0ZXmPRfmv5/6PqxLOn4</p>
+<p>G733K67K0/eXYW1mTkz9sjY8u9E3T10JNT0zE/60WihuZGKZQDIqqig0fOsdvdGa</p>
+<p>g+srAW91T56kAT+y59VcvqVCQNjS897E3T9hsUNkQNCdOitQcnN8/5VNQUL0SjyD</p>
+<p>BV0y5ry+pUt1rnojj82KQ3WzZuD+XsDE+w2JSGqhcqf9b7D6puy1smhCNwZJ9L1l</p>
+<p>pJlrCap6YQN8TPFTkf4aFBctxonAdQDDxbON6sPJALc/myPwTVTxD3nJJhv12yft</p>
+<p>...</p>
+</div>
+<br>
+<p>Esse é o começo do arquivo. Ele tem um cabeçalho informando que é uma chave pública (<mono>🔓Public Key</mono>) PGP, um comentário, e o conteúdo.</p>
+<br>
+<p>Podemos importá-la com:</p>
+<br>
+<div class="code">
+<p>$ gpg --import EF6E286DDA85EA2A4BA7DE684E2C6E8793298290.asc</p>
+<p>gpg: key 4E2C6E8793298290: 2 signatures not checked due to missing keys</p>
+<p>gpg: key 4E2C6E8793298290: public key "Tor Browser Developers (signing key) <torbrowser@torproject.org>" imported</p>
+<p>gpg: Total number processed: 1</p>
+<p>gpg:               imported: 1</p>
+<p>gpg: marginals needed: 3  completes needed: 1  trust model: pgp</p>
+<p>gpg: depth: 0  valid:   3  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 3u</p>
+<p>gpg: next trustdb check due at 2027-02-10</p>
+</div>
+<br>
+<p>A chave está importada no seu keyring. Keyring (chaveiro) é o nome que se dá para seu conjunto de chaves.</p>
+<br>
+<p>Você pode ver todas as suas chaves com:</p>
+<br>
+<div class="code">
+<p>$ gpg --fingerprint</p>
+<p>/home/anon/.gnupg/pubring.kbx</p>
+<p>-----------------------------</p>
+<p>pub   rsa4096 2014-12-15 [C] [expires: 2027-07-15]</p>
+<p>      EF6E 286D DA85 EA2A 4BA7  DE68 4E2C 6E87 9329 8290</p>
+<p>uid           [ unknown] Tor Browser Developers (signing key) <torbrowser@torproject.org></p>
+<p>sub   rsa4096 2024-07-15 [S] [expires: 2026-10-26]</p>
+</div>
+<br>
+<p>Agora você pode verificar os arquivos? Não.</p>
+<p>Como sabemos se essa chave é confiável? E se alguém hackeou o site do Tor e colocou lá um link para uma chave fraudulenta?</p>
+<br>
+<h3>4. Verifique em VÁRIOS lugares se a <mono>🔓Public Key</mono> é mesmo confiável, checando o <mono>fingerprint</mono></h3>
+<p>Cada <mono>🔓Public Key</mono> tem um <mono>fingerprint</mono> único. No caso da chave que importamos, o <mono>fingerprint</mono> é EF6E 286D DA85 EA2A 4BA7  DE68 4E2C 6E87 9329 8290, como pudemos ver no comando acima.</p>
+<br>
+<p>Não é só porque está no keyserver que é confiável. Qualquer um pode subir uma chave lá.</p>
+<p>O que eu faço é pesquisar na internet "what is Tor public key fingerprint" e geralmente eu encontro alguma postagem em fóruns citando o <mono>fingerprint</mono>. Também vale olhar tutoriais de pessoas checando a <mono>🔏assinatura</mono> no youtube e checar se o <mono>fingerprint</mono> bate. </p>
+<br>
+<p>Convenhamos, o hacker teria que forjar vídeos do Youtube, posts em fóruns, hackear o site do Tor e mais um monte de coisas para fazer essa fraude. Se você encontra a <mono>fingerprint</mono> em posts na internet que estão lá há anos e com centenas de comentários sem ninguém apontar que ela é falsa, você pode ter quase 100% de certeza que é a chave real. Outra forma é a web of trust, mas isso daria um post inteiro e não é introdutório.</p>
+<br>
+<p>Achei esse post no reddit <a target="_blank" href="https://www.reddit.com/r/TOR/comments/s25eoq/cant_check_signature_no_public_key/?rdt=34735">https://www.reddit.com/r/TOR/comments/s25eoq/cant_check_signature_no_public_key/?rdt=34735</a> de 3 anos atrás e a <mono>🔓Public Key</mono> tem a mesma <mono>fingerprint</mono> da que baixei, então me sinto seguro que a chave é real.</p>
+<br>
+<p>A parte mais especial foi esta: baixar a <mono>🔓Public Key</mono> correta e verificar se ela é confiável.</p>
+<br>
+<h3>5. Verifique a integridade e a autenticidade do arquivo baixado usando GPG</h3>
+<p>Agora é só usar o comando na <mono>🔏assinatura</mono> .asc:</p>
+<br>
+<div class="code">
+<p>$ gpg --verify tor-browser-linux-x86_64-14.0.6.tar.xz.asc</p>
+<p>gpg: assuming signed data in 'tor-browser-linux-x86_64-14.0.6.tar.xz'</p>
+<p>gpg: Signature made Fri 07 Feb 2025 02:17:14 PM -03</p>
+<p>gpg:                using RSA key CAAE408AEBE2288E96FC5D5E157432CF78A65729</p>
+<p>gpg: Good signature from "Tor Browser Developers (signing key) <torbrowser@torproject.org>" [unknown]</p>
+<p>gpg: WARNING: This key is not certified with a trusted signature!</p>
+<p>gpg:          There is no indication that the signature belongs to the owner.</p>
+<p>Primary key fingerprint: EF6E 286D DA85 EA2A 4BA7  DE68 4E2C 6E87 9329 8290</p>
+<p>     Subkey fingerprint: CAAE 408A EBE2 288E 96FC  5D5E 1574 32CF 78A6 5729</p>
+</div>
+<br>
+<p>O resultado foi <i><green>Good signature</green></i>. Isso significa que a <mono>🔏assinatura</mono> bate com o arquivo - arquivo está integro e não foi alterado - e bate com a <mono>🔓Public Key</mono> - <mono>🔏assinatura</mono> é autêntica a foi feita pela chave dos desenvolvedores do Tor que você baixou. A sua parte nisso tudo é checar o <mono>fingerprint</mono> a ter certeza de que baixou uma chave confiável.</p>
+<br>
+<p>Se você não teve o resultado "Good signature", não use o software. </p>
+<br>
+<p>É extremamente simples fazer uma verificação dessas. Você só precisou de dois comandos, um pra importar e chave e outro para verificar.</p>
+<p>A parte principal é baixar os arquivos corretos. </p>
+<p>Lembre-se: </p>
+<p><ul></p>
+<li>Geralmente <mono>🔏assinaturas</mono> e <mono>🔓Public Keys</mono> são arquivos de texto terminados em .asc. Mas também podem ser arquivos binários terminados em .gpg. Também ocorrem com a extensão .sig. Elas são distribuidas junto com o software.</li>
+<li>Geralmente as pessoas deixam suas <mono>fingerprints</mono> e vários lugares da internet, como redes sociais, sites pessoais, etc, para os outros encontrarem e verificarem. Sempre procure em mais de um lugar.</li>
+<li>Uma <mono>fingerprint</mono> se parece com isso: EF6E 286D DA85 EA2A 4BA7 DE68 4E2C 6E87 9329 8290.</li>
+<p></ul></p>
+<br>
+<h2>Mais um exemplo, baixando e verificando a carteira Electrum</h2>
+<p>Vamos fazer mais uma vez para consolidar.</p>
+<br>
+<p>O primeiro cuidado é verificar se está entrando no site correto. A URL do site da carteira electrum é <a target="_blank" href="https://electrum.org/">https://electrum.org/</a>. </p>
+<p>SEMPRE olhe a URL para não entrar em sites falsos!</p>
+<br>
+<p>Vá em downloads e baixe o software. Eu irei baixar o appimage para Linux como exemplo.</p>
+<br>
+<div class="code">
+<p>$ ls</p>
+<p>electrum-4.5.8-x86_64.AppImage</p>
+</div>
+<br>
+<p>Procure pela <mono>🔏assinatura</mono> do arquivo. </p>
+<p>No caso do Electrum, clique em "signatures" ao lado do arquivo que você baixou.</p>
+<br>
+<div class="code">
+<p>$ ls</p>
+<p>electrum-4.5.8-x86_64.AppImage</p>
+<p>electrum-4.5.8-x86_64.AppImage.asc</p>
+</div>
+<br>
+<p>Nós temos o software e a <mono>🔏assinatura</mono> .asc, mas não temos a <mono>🔓Public Key</mono> do signatário.</p>
+<br>
+<p>O que acontece se tentarmos verificar mesmo assim?</p>
+<br>
+<div class="code">
+<p>$ gpg --verify electrum-4.5.8-x86_64.AppImage.asc</p>
+<p>gpg: assuming signed data in 'electrum-4.5.8-x86_64.AppImage'</p>
+<p>gpg: Signature made Wed 23 Oct 2024 04:13:28 AM -03</p>
+<p>gpg:                using RSA key 637DB1E23370F84AFF88CCE03152347D07DA627C</p>
+<p>gpg: Can't check signature: No public key</p>
+<p>gpg: Signature made Wed 23 Oct 2024 03:03:11 AM -03</p>
+<p>gpg:                using RSA key 0EEDCFD5CAFB459067349B23CA9EEEC43DF911DC</p>
+<p>gpg: Can't check signature: No public key</p>
+<p>gpg: Signature made Wed 23 Oct 2024 12:26:58 AM -03</p>
+<p>gpg:                using RSA key 6694D8DE7BE8EE5631BED9502BD5824B7F9470E6</p>
+<p>gpg: Can't check signature: No public key</p>
+</div>
+<br>
+<p>A saída mostra que o arquivo foi assinado por três chaves diferentes e exibe os <mono>fingerprints</mono> de cada chave. Para as três tivemos o resultado 'No public key'.</p>
+<p>O GPG automaticamente procurou  pelas chaves que possuem esses <mono>fingerprints</mono> no nosso keyring, mas não as encontrou.</p>
+<br>
+<p>Agora vamos voltar ao site e procurar pelas chaves. Lá está escrito: <i>The current executables have been signed by ThomasV, SomberNight, Emzy.</i></p>
+<p>Baixamos a chave do ThomasV que está em <a target="_blank" href="https://raw.githubusercontent.com/spesmilo/electrum/master/pubkeys/ThomasV.asc">https://raw.githubusercontent.com/spesmilo/electrum/master/pubkeys/ThomasV.asc</a> e importamos.</p>
+<br>
+<p>Mas antes de usar essa chave, precisamos confiar nela. Pesquisando na internet, encontrei vários posts de fóruns com a <mono>fingerprint</mono> batendo.</p>
+<p>Tem também <a target="_blank" href="https://www.youtube.com/watch?v=hjYCXOyDy7Y">um vídeo no youtube</a> onde o ThomasV aparece ao lado de sua <mono>fingerprint</mono> em uma palestra.</p>
+<br>
+<p>Então essa é mesmo a <mono>fingerprint</mono> da <mono>🔓Public Key</mono> dele. Podemos continuar.</p>
+<br>
+<div class="code">
+<p>$ ls</p>
+<p>electrum-4.5.8-x86_64.AppImage  electrum-4.5.8-x86_64.AppImage.asc  ThomasV.asc</p>
+</div>
+<br>
+<div class="code">
+<p>$ gpg --import ThomasV.asc</p>
+<p>gpg: key 2BD5824B7F9470E6: public key "Thomas Voegtlin (https://electrum.org) <thomasv@electrum.org>" imported</p>
+<p>gpg: Total number processed: 1</p>
+<p>gpg:               imported: 1</p>
+</div>
+<br>
+<p>Verificamos novamente com o mesmo comando de antes:</p>
+<br>
+<div class="code">
+<p>$ gpg --verify electrum-4.5.8-x86_64.AppImage.asc</p>
+<p>gpg: assuming signed data in 'electrum-4.5.8-x86_64.AppImage'</p>
+<p>gpg: Signature made Wed 23 Oct 2024 04:13:28 AM -03</p>
+<p>gpg:                using RSA key 637DB1E23370F84AFF88CCE03152347D07DA627C</p>
+<p>gpg: Can't check signature: No public key</p>
+<p>gpg: Signature made Wed 23 Oct 2024 03:03:11 AM -03</p>
+<p>gpg:                using RSA key 0EEDCFD5CAFB459067349B23CA9EEEC43DF911DC</p>
+<p>gpg: Can't check signature: No public key</p>
+<p>gpg: Signature made Wed 23 Oct 2024 12:26:58 AM -03</p>
+<p>gpg:                using RSA key 6694D8DE7BE8EE5631BED9502BD5824B7F9470E6</p>
+<p>gpg: Good signature from "Thomas Voegtlin (https://electrum.org) <thomasv@electrum.org>" [unknown]</p>
+<p>gpg:                 aka "ThomasV <thomasv1@gmx.de>" [unknown]</p>
+<p>gpg:                 aka "Thomas Voegtlin <thomasv1@gmx.de>" [unknown]</p>
+<p>gpg: WARNING: This key is not certified with a trusted signature!</p>
+<p>gpg:          There is no indication that the signature belongs to the owner.</p>
+<p>Primary key fingerprint: 6694 D8DE 7BE8 EE56 31BE  D950 2BD5 824B 7F94 70E6</p>
+</div>
+<br>
+<p>O resultado é <i>Good signature from...</i> e a <mono>🔓Public Key</mono> que o GPG encontrou em nosso keyring.</p>
+<p>Note que este arquivo foi assinado por três chaves, e conseguimos o <i>Good signature</i> em uma delas. </p>
+<p>O ideal é que você importe as outras duas chaves e consiga verificar nas três, assim terá mais segurança.</p>
+<br>
+<h2>Verificando mensagens</h2>
+<p>Só para finalizar, você também pode verificar mensagens de texto da mesmíssima forma.</p>
+<br>
+<p>Eu escrevi uma mensagem que você pode baixar <a target="_blank" href="../../files/mensagem-exemplo-gpg.txt">aqui</a>.</p>
+<p>A <mono>🔏assinatura</mono> da mensagem está <a target="_blank" href="../../files/mensagem-exemplo-gpg.txt.asc">aqui</a>.</p>
+<p>Minha <mono>🔓Public Key</mono> está <a target="_blank" href="../../files/sdf-public-key.asc">aqui</a>.</p>
+<p>A <mono>fingerprint</mono> está na home deste blog.</p>
+<br>
+<p>Como exercício, tente verificar a mensagem. Só para ficar claro que não serve apenas para softwares.</p>
+<p>Depois tente editar o arquivo .txt e verifique novamente para ver o que acontece. Você vai ter um <i><red>BAD signature</red></i>, pois o arquivo foi alterado e não está mais íntegro.</p>
+<br>
+<p>O exemplo acima funciona, mas não é ideal. Quando são softwares você precisa de uma <mono>🔏assinatura</mono> separada, dois arquivos, mas se é apenas texto, um arquivo só basta. Quando eu criei a <mono>🔏assinatura</mono> acima, usei a opção de separar a <mono>🔏assinatura</mono> do arquivo de texto, mas no próximo exemplo eu deixei tudo em um arquivo só:</p>
+<br>
+<p>Arquivo de texto com a mensagem e a <mono>🔏assinatura</mono> juntos  <a target="_blank" href="../../files/mensagem-exemplo-gpg-embutido.txt.asc">aqui</a>.</p>
+<br>
+<div class="code">
+<p>$ cat mensagem-exemplo-gpg-embutido.txt.asc</p>
+<p>-----BEGIN PGP SIGNED MESSAGE-----</p>
+<p>Hash: SHA512</p>
+<p>Mensagem de exemplo.</p>
+<p>Qualquer um pode lê-la, mas você deve verificar a autênticidade.</p>
+<p>A assinatura está embutida neste arquivo, então você não precisa de dois arquivos!</p>
+<p>-----BEGIN PGP SIGNATURE-----</p>
+<p>iQJGBAEBCgAwFiEEt1revGyMW4nDIhcST7Ayfa9JsiwFAmfB0yISHHNkZl9ib3hA</p>
+<p>cHJvdG9uLm1lAAoJEE+wMn2vSbIsly4QAIyaX4WTbIoxDDm18X7SW+jZ8vSms//Z</p>
+<p>i6CqJShEHKYhR8wUlYxBDeKRc/roKMtrKKJrEZfJ1rHeAE6/YcLKiSXI9ayWthVU</p>
+<p>...</p>
+</div>
+<br>
+<p>Tente verificar normalmente. Brinque com a ferramenta. Se divirta.</p>
+<br>
+<h2>Só mais uma verificação... a última, eu prometo...</h2>
+<p>Tem uma situação que é um pouco diferente do que já mostrei. Em essência é a mesma coisa, mas tem um detalhe a mais.</p>
+<p>São situações onde a <mono>🔏assinatura</mono> é indireta, você já vai entender.</p>
+<br>
+<p>Um exemplo dessa situação é quando verificamos o <a target="_blank" href="https://linuxmint.com/">Linux Mint</a>.</p>
+<p>Aqui nós vamos baixar três arquivos, além da <mono>🔓Public Key</mono>:</p>
+<p><ol></p>
+<li>O software;</li>
+<li>um arquivo .txt com <mono>🧬hashes</mono>;</li>
+<li>e a <mono>🔏assinatura</mono> desse arquivo .txt.</li>
+<p></ol></p>
+<p>A diferença aqui é que a <mono>🔏assinatura</mono> assina o arquivo .txt com os <mono>🧬hashes</mono>, e não o software. Já o arquivo .txt tem os <mono>🧬hash</mono> do software.</p>
+<p>Ou seja, é uma <mono>🔏assinatura</mono> indireta.</p>
+<br>
+<h3>Integridade e <mono>🧬hashes</mono></h3>
+<p>O que é um <mono>🧬hash</mono>? É bem simples, um algorítimo de <mono>🧬hash</mono> pega uma informação e gera outra informação a partir dela.</p>
+<p>Por exemplo, usando o algorítimo sha256 e inserindo nele a mensagem "sdf", o resultado será: </p>
+<p>18ee24150dcb1d96752a4d6dd0f20dfd8ba8c38527e40aa8509b7adecf78f9c6.</p>
+<br> 
+<p>Esse resultado é um <mono>🧬hash</mono>. No caso, o <mono>🧬hash</mono> da mensagem "sdf". </p>
+<p>E <i>apenas</i> o <mono>🧬hash</mono> da mensagem "sdf". Nenhuma outra mensagem terá esse mesmo <mono>🧬hash</mono>.</p>
+<p>Um <mono>🧬hash</mono>, apesar de conter letras, é um número muito alto, representado em <a target="_blank" href="https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_hexadecimal">hexadecimal</a>.</p>
+<br>
+<p>E daí?</p>
+<p><ol></p>
+<li>Se eu rodar o mesmo algorítmo com a mesma mensagem, resultará SEMPRE o mesmo <mono>🧬hash</mono>. Esse <mono>🧬hash</mono> NÃO é aleatório, a mesma mensagem sempre gerará o mesmo resultado quando inserido no sha256.</li>
+<li>Se eu mudar uma letra da mensagem, o resultado será outro número, completamente diferente.</li>
+<li>É um número tão alto, mas tão alto, que é IMPOSSÍVEL duas mensagens gerarem o mesmo número.</li>
+<li>E é também impossível eu <i>escolher</i> esse número pelas razões acima. Não é possível eu mexer na mensagem para gerar o número que quero.</li>
+<p></ol></p>
+<p>Por isso a saída de um algorítimo de <mono>🧬hash</mono> é um número único que só aquele arquivo tem, se eu alterar o arquivo essa saída mudará para algo totalmente diferente e imprevissível.</p>
+<br>
+<p>Hashes servem para GARANTIR a INTEGRIDADE de um arquivo.</p>
+<p>Então, ao invés de assinar o arquivo, posso assinar o <mono>🧬hash</mono> do arquivo.</p>
+<br>
+<p>Então você pode verificar o <mono>🧬hash</mono> ao invés do arquivo, e depois ver se o <mono>🧬hash</mono> bate com o arquivo.</p>
+<br>
+<p>Voltando ao Mint, temos os arquivos:</p>
+<div class="code">
+<p>$ ls</p>
+<p>linuxmint-22.1-xfce-64bit.iso  sha256sum.txt  sha256sum.txt.gpg</p>
+</div>
+<br>
+<p>O conteúdo do arquivo sha256sum.txt é:</p>
+<div class="code">
+<p>$ cat sha256sum.txt</p>
+<p>ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f *linuxmint-22.1-cinnamon-64bit.iso</p>
+<p>d286306d0f40bd7268f08c523ece5fba87c0369a27a72465a19447e3606c5fa0 *linuxmint-22.1-mate-64bit.iso</p>
+<p>6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d *linuxmint-22.1-xfce-64bit.iso</p>
+</div>
+<br>
+<p>Na esquerda estão os <mono>🧬hashes</mono> e na direita o nome do arquivo que o gerou. </p>
+<p>Precisamos gerar o <mono>🧬hash</mono> do nosso arquivo usando o algorítimo sha256 e ele precisa ser identico ao <mono>🧬hash</mono> que está na lista.</p>
+<br>
+<p>Usei o comando sha256sum:</p>
+<div class="code">
+<p> $ sha256sum linuxmint-22.1-xfce-64bit.iso</p>
+<p>6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d  linuxmint-22.1-xfce-64bit.iso</p>
+</div>
+<br>
+<p>Note que o <mono>🧬hash</mono> é idêntico. O <mono>🧬hash</mono> no arquivo sha256sum.txt é realmente o <mono>🧬hash</mono> do arquivo que baixamos.</p>
+<p>Agora só precisamos verificar o arquivo sha256sum.txt, pois ele representa nosso software, como confirmamos ao comparar com o <mono>🧬hash</mono> que nós mesmos geramos.</p>
+<br>
+<p>Agora é só verificar o arquivo sha256sum.txt para sabermos se ele é autêntico. Eu já tenho a <mono>🔓Public Key</mono> do Linux Mint aqui.</p>
+<div class="code">
+<p> $ gpg --verify sha256sum.txt.gpg sha256sum.txt</p>
+<p>gpg: Signature made Tue 14 Jan 2025 08:35:18 AM -03</p>
+<p>gpg:                using RSA key 27DEB15644C6B3CF3BD7D291300F846BA25BAE09</p>
+<p>gpg: Good signature from "Linux Mint ISO Signing Key <root@linuxmint.com>" [unknown]</p>
+<p>gpg: WARNING: This key is not certified with a trusted signature!</p>
+<p>gpg:          There is no indication that the signature belongs to the owner.</p>
+<p>Primary key fingerprint: 27DE B156 44C6 B3CF 3BD7  D291 300F 846B A25B AE09</p>
+</div>
+<br>
+<p><i><green>Good signature</green></i>, deu certo.</p>
+<br>
+<p>É um método um pouco diferente, um passo a mais, mas é a mesma lógica de antes. </p>
+<p>Por que é feito assim? Não faço ideia. Talvez seja porque o arquivo é grande e demoraria para verificar, então se usa o <mono>🧬hash</mono> que é menor. Mas não sei se é por isso.</p>
+<br>
+<h2>Concluindo</h2>
+<p>O PGP/GPG serve para garantir que você baixou o software da pessoa certa, não que a pessoa é honesta.</p>
+<p>Nós testamos o Electrum e temos certeza que veio do Thomas Voegtlin, mas isso não garante que o Thomas seja honesto.</p>
+<br>
+<p>Estamos confiando que o arquivo veio dele por causa do GPG, mas estamos confiando NELE por causa de sua <b>reputação</b>. E também porque é um software de código aberto. A carteira Electrum é uma das mais tradicionais e está sendo usada desde 2011. Não vá sair baixando coisas desenvolvidas por um cara aleatório na internet que ninguém conhece. Usei a Electrum como exemplo, mas isso se aplica a tudo.</p>
+<br>
+<p>É a primeira vez que tento escrever uma explicação e não sei se fui tão claro assim. Acabei escrevendo demais porque queria explicar tudo em detalhes para todos entenderem. Qualquer dúvida ou sugestão de alteração ou correção, usem os comentários ou o e-mail.</p>
+<p><!--ARTICLE-IS-SIGNED--> </p>
+<p><!--^Manual de GPG para falhos: verificando downloads^1740596997^🔐^NEVER^defaults^aa511157bebdf71487698a7315a16f878d148444e52d48adc923fda4059baee4^ <div>Saindo da Falha<br> Bloco 885446 (26/02/2025 16:09 quarta-feira) (⛅️ 31°C Céu com nuvens) 1₿ valia $84200, Network fee: 7sat/vB.</div>^pgp gpg linux autocustódia criptografia tech^--></p>
+   <br>
+   <span class="color-weak mono-small"></span>
+   <address>
+      Saindo da Falha, Wednesday, 26/02/2025 16:09
+   </address>
+   <span id="page-tags">Tags: <a href='../tags/index.html#tag-autocustódia'>autocustódia</a> 
+<a href='../tags/index.html#tag-criptografia'>criptografia</a> 
+<a href='../tags/index.html#tag-gpg'>gpg</a> 
+<a href='../tags/index.html#tag-linux'>linux</a> 
+<a href='../tags/index.html#tag-pgp'>pgp</a> 
+<a href='../tags/index.html#tag-tech'>tech</a> </span>
+   <hr id="page-hr-separator-bottom">
+   <h3>Comentários:</h3>
+<div id="HCB_comment_box" style="text-align:center"><span style="cursor:pointer;" id="load-comments" onclick="this.innerHTML='Carregando...'">💬 Carregando comentários...</span></div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+
+<script type="text/javascript" id="hcb">
+   document.getElementById("load-comments").addEventListener('click', loadComments);
+   function loadComments() {
+      if (!window.hcb_user) {
+        hcb_user = {};
+      }(function() {
+        let s = document.createElement("script"),
+            l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+            h = "https://www.htmlcommentbox.com";
+        s.setAttribute("type", "text/javascript");
+        s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24noOeNoU2cppcTsbYgYRgn%2F" + "&opts=16798&num=10&ts=1734891859180");
+        if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+      })(); 
+   }
+   loadComments() // Carregar automaticamente
+</script>
+
+<br>
+<p class="color-weak mono-small">Powered by <a href="https://www.htmlcommentbox.com/">HTML Comment Box</a>.</p>
+<br>
+   <div class="prev-next"> <span><a href="../../index.html">🏡Home</a></span> </div>
+</article>
+      </main>
+
+      <!-- side menu, projects, navigation, etc -->
+      <aside class="side-blocks">
+         
+      </aside>
+   </div>
+
+   <!-- site footer -->
+   <footer>
+      <i></i>
+   </footer>
+</div>
+</body>
+</html> 

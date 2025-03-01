@@ -317,6 +317,8 @@ parseToHTML() {
    # start-enders
    raw="$(echo "$raw" | sed -e 's/;\^ul/<ul>/g')";                   # start UL 
    raw="$(echo "$raw" | sed -e 's/;\$ul/<\/ul>/g')";                 # end UL
+   raw="$(echo "$raw" | sed -e 's/;\^ol/<ol>/g')";                   # start OL 
+   raw="$(echo "$raw" | sed -e 's/;\$ol/<\/ol>/g')";                 # end OL
    raw="$(echo "$raw" | sed -e 's/;\^C/<div class="code">/g')";      # start code block
    raw="$(echo "$raw" | sed -e 's/;\$C/<\/div>/g')";                 # end code block
    raw="$(echo "$raw" | sed -e 's/;\^table/<table>/g')";             # start table
@@ -432,6 +434,7 @@ compilePage() { # --home or --page
       favicon_url='./files/favicon.ico';
       article_list="$(genPostsList)";
       article_list_other="$(genCompactPostsList)";
+      nav_title="$WEBSITE_NAME";
    elif [[ $home_or_page == '--page' ]]
    then
       # configs para buildar um article (post)
@@ -451,6 +454,7 @@ compilePage() { # --home or --page
       local metadata="$(echo "$main" | head -n1)";
       # title na tab
       super_title="SDF: ""$(getRawMeta "$raw_index" --title)";
+      nav_title="$(getRawMeta "$raw_index" --title)";
    fi
       main="${main/@ARTICLE-LIST-CONTENT@/"$article_list"}";
       main="${main/@ARTICLE-LIST-OTHER-CONTENT@/"$article_list_other"}";
@@ -458,6 +462,8 @@ compilePage() { # --home or --page
    local base="$(cat "$base_template_path")";
    local motd="$(cat "$motd_template_path")";
    local footer="$(cat "$footer_template_path")";
+    # top nav
+   top_nav="${top_nav/@NAV-PAGE-TITLE@/"$nav_title"}";
    # faz as substituições
    base="${base/@SUPER-TITLE-CONTENT@/"$super_title"}";
    base="${base/@CSS-URL-ROOT-CONTENT@/"$css_url_root"}";
@@ -634,12 +640,12 @@ genPrevNext() {
       local prev_next="$2";
       if [[ "$prev_next" == '--prev' ]]
       then
-         local sub="Postagem anterior";
+         local sub="Fechamento anterior";
          local icon_prev='←';
          local link=$(("$raw-1"));
       elif [[ "$prev_next" == '--next' ]]
       then
-         local sub="Próxima postagem";
+         local sub="Próximo fechamento ";
          local icon_next='→';
          local link=$(("$raw+1"));
       fi
@@ -837,6 +843,7 @@ compileAllAndUpdateAll() {
       checkRawIsSigned "$post" && compile "$post";
    done
    updateAll;
+   warn "Did not updated tags or journals. Do it manually and re-run -R.";
 }
 
 # FUNÇÃO MAIN

@@ -1,0 +1,3 @@
+Mensagem de exemplo.
+Qualquer um pode lê-la, mas você deve verificar a autênticidade.
+A assinatura não está embutida, mas está em um arquivo .asc separado.

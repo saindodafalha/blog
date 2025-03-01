@@ -58,8 +58,8 @@
 }
 
 #hcb_form_name, #hcb_form_content {
-   background: var(--bg-code)!important;
-   color: var(--fg-code)!important;
+   background: var(--bg-block)!important;
+   color: var(--fg-block)!important;
    font-family: monospace!important;
    border: 1px darkgray solid!important;
    border-radius: 0!important;

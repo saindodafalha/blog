@@ -1,18 +1,12 @@
 ;;<script>
 ;;   window.addEventListener("load", function(){
 ;;     document.getElementById("chattable").contentWindow.postMessage(`
-;;      :root {
-;;--fg-block: #999;
-;;--bg-block: transparent;
-;;--font-size-block: 1.05em;
-;;--fg-block-weak: #919991;
-;;
-;;      }
 ;;
 ;;      body {
-;;         color: var(--fg-block);     
-;;         font-size: var(--font-size-block);
-;;         background: var(--bg-block);
+;;         color: #fff;     
+;;         font-size: 1em;
+;;         font-family: monospace;
+;;         background: #000;
 ;;      }
 ;;      
 ;;      #top_banner{
@@ -20,20 +14,22 @@
 ;;      }
 ;;
 ;;      #settings {
-;;         background-color: var(--fg-block);
+;;         background-color: #fff;
 ;;         border-radius: 50%;
 ;;      }
 ;;
 ;;      #textInput #input {
 ;;         background: transparent;
-;;         color: var(--fg-block-weak);     
-;;         font-size: var(--font-size-block);
+;;         color: #ccc;     
+;;         font-size: 1em;
 ;;         border-radius: 0;
+;;         font-family: monospace;
 ;;      }
 ;;
 ;;      #input:empty::before {
 ;;         content: "Enviar mensagem...";
-;;         color: var(--fg-block-weak);
+;;         color: #ccc;
+;;         font-family: monospace;
 ;;      }
 ;;
 ;;      #emojiTrayToggle {

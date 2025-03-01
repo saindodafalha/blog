@@ -1,5 +1,14 @@
 /* SDF Black Green Theme */
 :root {
+   /* colors */
+   --txt-red: #f00;
+   --txt-green: #0f0;
+   --txt-blue: #55f;
+   --txt-yellow: #ff0;
+   --txt-purple: #f0f;
+   --txt-light-blue: #0ff;
+   --txt-gray: #888;
+
    /* body  */
    --bg-body: #000;
 
@@ -29,8 +38,8 @@
    /* block */
    --bg-block: transparent;
    --fg-block: var(--fg-wc);
-   --fg-block-weak: #888;
-   --fg-block-strong: #fff;
+   --fg-block-weak: var(--txt-gray);
+   --fg-block-strong: var(--txt-blue);
    --font-block: arial;
    --font-size-block: 1.1em;
    --margin-block: .7em;
@@ -47,8 +56,8 @@
    --font-size-side-block: 0.95em;
 
    /* misc */
-   --bg-table: #000;
-   --bg-code: #000;
+   --bg-table: #222;
+   --bg-code: #222;
    --fg-code: #fff;
    --color-hr: var(--fg-block-weak);
 }

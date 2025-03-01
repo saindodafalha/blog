@@ -80,6 +80,7 @@ body {
    margin-left: 10px;
    color: var(--fg-nav);
    text-decoration: none;
+   cursor: pointer;
 }
 
 .top-nav .mini-logo .nav-link {
@@ -136,6 +137,10 @@ footer {
    word-break: break-word;
 }
 
+.page #post-title {
+  display:none;
+} 
+
 .page a {
    color: var(--fg-block-strong);
    font-weight: bold;
@@ -151,7 +156,10 @@ footer {
 .page h3, 
 .page h4,
 .page h5 {
-   margin: 0;
+  margin: 0;
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+
 }
 
 .page h1 {
@@ -187,8 +195,14 @@ footer {
 
 .page hr {
    border-color: var(--color-hr);
+   border-style: dashed;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
+.page ol li {
+  font-size: 0.95em;
+}
 .page ul li a {
    text-decoration: none;
 }
@@ -342,21 +356,21 @@ footer {
 }
 
 gain {
-   color: green;
+   color: var(--txt-green);
    font-weight: bold;
    font-family: monospace;
    font-size: 1.2em;
 }
 
 loss {
-   color: red;
+   color: var(--txt-red);
    font-weight: bold;
    font-family: monospace;
    font-size: 1.2em;
 }
 
 expenses {
-   color: lightyellow;
+   color: var(--txt-yellow);
    font-weight: bold;
    font-family: monospace;
    font-size: 1.2em;
@@ -379,11 +393,19 @@ mono, .mono {
    list-style: none;
 }
 
-orange {color: orange;}
-blue   {color: blue;}
-yellow {color: yellow;}
-purple {color: purple;}
+/* basic colors */
+red, .red {color: var(--txt-red);}
+green, .green {color: var(--txt-green);}
+blue, .blue {color: var(--txt-blue);}
+yellow, .yellow {color: var(--txt-yellow);}
+purple, .purple {color: var(--txt-purple);}
+lightblue, .lightblue {color: var(--txt-light-blue);}
 
+orange {color:orange}
+
+.auto-hide-image:hover {
+  opacity: 0.3;
+}
 
 /* misc */
 #sideblock-fechamentos a {

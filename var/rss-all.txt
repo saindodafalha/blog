@@ -5,3 +5,5 @@
 1735261268 <item><title>Analisando minhas metas para 2024</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r3</link><pubDate>Thu, 26 Dec 2024 22:01:08 -0300</pubDate></item>
 1736949612 <item><title>Autoavaliação física</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r4</link><pubDate>Wed, 15 Jan 2025 11:00:12 -0300</pubDate></item>
 1737027089 <item><title>A cagada mais cara que já fiz</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r5</link><pubDate>Thu, 16 Jan 2025 08:31:29 -0300</pubDate></item>
+1740596997 <item><title>Manual de GPG para falhos: verificando downloads</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/r6</link><pubDate>Wed, 26 Feb 2025 16:09:57 -0300</pubDate></item>
+1740788547 <item><title>Fevereiro 2025</title><description>Atualização.</description><link>https://saindodafalha.github.io/blog/r/2</link><pubDate>Fri, 28 Feb 2025 21:22:27 -0300</pubDate></item>

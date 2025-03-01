@@ -1,21 +1,28 @@
 ;;Lista de tags: <ul class="mono posts-list">
 ;;<li><a href='#tag-alegria'>alegria (1)</a></li> 
 ;;<li><a href='#tag-arrependimento'>arrependimento (1)</a></li> 
+;;<li><a href='#tag-autocustódia'>autocustódia (1)</a></li> 
+;;<li><a href='#tag-bearmarket'>bearmarket (1)</a></li> 
 ;;<li><a href='#tag-bitcoin'>bitcoin (1)</a></li> 
 ;;<li><a href='#tag-blog'>blog (1)</a></li> 
 ;;<li><a href='#tag-caatinga'>caatinga (1)</a></li> 
+;;<li><a href='#tag-criptografia'>criptografia (1)</a></li> 
 ;;<li><a href='#tag-cultura-pobre'>cultura-pobre (1)</a></li> 
 ;;<li><a href='#tag-desemprego'>desemprego (1)</a></li> 
-;;<li><a href='#tag-fechamento'>fechamento (2)</a></li> 
+;;<li><a href='#tag-fechamento'>fechamento (3)</a></li> 
 ;;<li><a href='#tag-fracasso'>fracasso (2)</a></li> 
+;;<li><a href='#tag-gpg'>gpg (1)</a></li> 
 ;;<li><a href='#tag-inveja'>inveja (1)</a></li> 
-;;<li><a href='#tag-linux'>linux (1)</a></li> 
+;;<li><a href='#tag-linux'>linux (2)</a></li> 
+;;<li><a href='#tag-medo'>medo (1)</a></li> 
 ;;<li><a href='#tag-merdeste'>merdeste (1)</a></li> 
 ;;<li><a href='#tag-metas'>metas (1)</a></li> 
 ;;<li><a href='#tag-musculação'>musculação (1)</a></li> 
 ;;<li><a href='#tag-neetismo'>neetismo (1)</a></li> 
-;;<li><a href='#tag-pobreza'>pobreza (1)</a></li> 
+;;<li><a href='#tag-pgp'>pgp (1)</a></li> 
+;;<li><a href='#tag-pobreza'>pobreza (2)</a></li> 
 ;;<li><a href='#tag-ricing'>ricing (1)</a></li> 
+;;<li><a href='#tag-tech'>tech (1)</a></li> 
 ;;<li><a href='#tag-tristeza'>tristeza (3)</a></li> 
 ;;<li><a href='#tag-viagem'>viagem (1)</a></li> 
 ;;<li><a href='#tag-vida-de-falho'>vida-de-falho (1)</a></li> 
@@ -29,6 +36,16 @@
 ;;<h3 id='tag-arrependimento'>arrependimento (1)</h3>
 ;;<ul class='posts-list'>
 ;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-autocustódia'>autocustódia (1)</h3>
+;;<ul class='posts-list'>
+;;<!-- 1740596997 --> <li><a href='../../r/r6/index.html'><span>🔐</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/02/2025</span>&nbsp;-&nbsp;<span>Manual de GPG para falhos: verificando downloads</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-bearmarket'>bearmarket (1)</h3>
+;;<ul class='posts-list'>
+;;<!-- 1740788547 --> <li><a href='../../r/2/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>28/02/2025</span>&nbsp;-&nbsp;<span>Fevereiro 2025</span></a></li>
 ;;</ul>
 <br>
 ;;<h3 id='tag-bitcoin'>bitcoin (1)</h3>
@@ -46,6 +63,11 @@
 ;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
 ;;</ul>
 <br>
+;;<h3 id='tag-criptografia'>criptografia (1)</h3>
+;;<ul class='posts-list'>
+;;<!-- 1740596997 --> <li><a href='../../r/r6/index.html'><span>🔐</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/02/2025</span>&nbsp;-&nbsp;<span>Manual de GPG para falhos: verificando downloads</span></a></li>
+;;</ul>
+<br>
 ;;<h3 id='tag-cultura-pobre'>cultura-pobre (1)</h3>
 ;;<ul class='posts-list'>
 ;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
@@ -56,10 +78,11 @@
 ;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
 ;;</ul>
 <br>
-;;<h3 id='tag-fechamento'>fechamento (2)</h3>
+;;<h3 id='tag-fechamento'>fechamento (3)</h3>
 ;;<ul class='posts-list'>
 ;;<!-- 1735351224 --> <li><a href='../../r/0/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>27/12/2024</span>&nbsp;-&nbsp;<span>Fechamento 2024</span></a></li>
 ;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;<!-- 1740788547 --> <li><a href='../../r/2/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>28/02/2025</span>&nbsp;-&nbsp;<span>Fevereiro 2025</span></a></li>
 ;;</ul>
 <br>
 ;;<h3 id='tag-fracasso'>fracasso (2)</h3>
@@ -68,13 +91,24 @@
 ;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
 ;;</ul>
 <br>
+;;<h3 id='tag-gpg'>gpg (1)</h3>
+;;<ul class='posts-list'>
+;;<!-- 1740596997 --> <li><a href='../../r/r6/index.html'><span>🔐</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/02/2025</span>&nbsp;-&nbsp;<span>Manual de GPG para falhos: verificando downloads</span></a></li>
+;;</ul>
+<br>
 ;;<h3 id='tag-inveja'>inveja (1)</h3>
 ;;<ul class='posts-list'>
 ;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
 ;;</ul>
 <br>
-;;<h3 id='tag-linux'>linux (1)</h3>
+;;<h3 id='tag-linux'>linux (2)</h3>
 ;;<ul class='posts-list'>
+;;<!-- 1740596997 --> <li><a href='../../r/r6/index.html'><span>🔐</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/02/2025</span>&nbsp;-&nbsp;<span>Manual de GPG para falhos: verificando downloads</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-medo'>medo (1)</h3>
+;;<ul class='posts-list'>
+;;<!-- 1740788547 --> <li><a href='../../r/2/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>28/02/2025</span>&nbsp;-&nbsp;<span>Fevereiro 2025</span></a></li>
 ;;</ul>
 <br>
 ;;<h3 id='tag-merdeste'>merdeste (1)</h3>
@@ -97,13 +131,24 @@
 ;;<!-- 1737027089 --> <li><a href='../../r/r5/index.html'><span>💸</span>&nbsp;<span class='color-weak' style='font-weight:normal'>16/01/2025</span>&nbsp;-&nbsp;<span>A cagada mais cara que já fiz</span></a></li>
 ;;</ul>
 <br>
-;;<h3 id='tag-pobreza'>pobreza (1)</h3>
+;;<h3 id='tag-pgp'>pgp (1)</h3>
+;;<ul class='posts-list'>
+;;<!-- 1740596997 --> <li><a href='../../r/r6/index.html'><span>🔐</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/02/2025</span>&nbsp;-&nbsp;<span>Manual de GPG para falhos: verificando downloads</span></a></li>
+;;</ul>
+<br>
+;;<h3 id='tag-pobreza'>pobreza (2)</h3>
 ;;<ul class='posts-list'>
 ;;<!-- 1738279211 --> <li><a href='../../r/1/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>30/01/2025</span>&nbsp;-&nbsp;<span>Janeiro 2025</span></a></li>
+;;<!-- 1740788547 --> <li><a href='../../r/2/index.html'><span>📊</span>&nbsp;<span class='color-weak' style='font-weight:normal'>28/02/2025</span>&nbsp;-&nbsp;<span>Fevereiro 2025</span></a></li>
 ;;</ul>
 <br>
 ;;<h3 id='tag-ricing'>ricing (1)</h3>
 ;;<ul class='posts-list'>
+;;</ul>
+<br>
+;;<h3 id='tag-tech'>tech (1)</h3>
+;;<ul class='posts-list'>
+;;<!-- 1740596997 --> <li><a href='../../r/r6/index.html'><span>🔐</span>&nbsp;<span class='color-weak' style='font-weight:normal'>26/02/2025</span>&nbsp;-&nbsp;<span>Manual de GPG para falhos: verificando downloads</span></a></li>
 ;;</ul>
 <br>
 ;;<h3 id='tag-tristeza'>tristeza (3)</h3>
@@ -130,4 +175,4 @@
 <br>
 ;;<!--ARTICLE-IS-SIGNED-->
 ;;<!--^Tags^1738682103^🏷^NEVER^hidden no-rss no-comments unlisted^e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855^ <div>Saindo da Falha<br> Bloco 882294 (04/02/2025 12:15 terça-feira) (☀ 32°C Ensolarado) 1₿ valia 9320, Network fee: 4sat/vB.</div>^none^-->
-;;<!--^Tags^1738682103^🏷^1739907989^hidden no-rss no-comments unlisted^1bbd3359f9f0101a50db72a306ebe0a2c4f7e08f172ad91aafb5f6a70fb0e4ba^ <div>Saindo da Falha<br> Bloco 882294 (04/02/2025 12:15 terça-feira) (☀ 32°C Ensolarado) 1₿ valia 9320, Network fee: 4sat/vB.</div>^none^-->
+;;<!--^Tags^1738682103^🏷^1740792460^hidden no-rss no-comments unlisted^c5ff19fb82532841b5015a45df31e3c1962bac3e44d9d9cd2d1624c9a200cc5f^ <div>Saindo da Falha<br> Bloco 882294 (04/02/2025 12:15 terça-feira) (☀ 32°C Ensolarado) 1₿ valia 9320, Network fee: 4sat/vB.</div>^none^-->

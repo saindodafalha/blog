@@ -3,18 +3,18 @@
    /* colors */
    --txt-red: #f00;
    --txt-green: #0f0;
-   --txt-blue: #55f;
-   --txt-yellow: #ff0;
+   --txt-blue: #00f;
+   --txt-yellow: #da0;
    --txt-purple: #f0f;
    --txt-light-blue: #0ff;
    --txt-gray: #888;
 
    /* body  */
-   --bg-body: #000;
+   --bg-body: #eee;
 
    /* website container */
    --bg-wc: transparent;
-   --fg-wc: #ddd;
+   --fg-wc: #000;
    --font-wc: arial;
 
    /* banner  */
@@ -38,8 +38,8 @@
    /* block */
    --bg-block: transparent;
    --fg-block: var(--fg-wc);
-   --fg-block-weak: var(--txt-gray);
-   --fg-block-strong: var(--txt-blue);
+   --fg-block-weak: #333;
+   --fg-block-strong: #33f;
    --font-block: arial;
    --font-size-block: 1.1em;
    --margin-block: .7em;
@@ -56,9 +56,9 @@
    --font-size-side-block: 0.95em;
 
    /* misc */
-   --bg-table: #222;
-   --bg-code: #222;
-   --fg-code: #fff;
+   --bg-table: #ddd;
+   --bg-code: #111;
+   --fg-code: #ddd;
    --color-hr: var(--fg-block-weak);
 }
 
